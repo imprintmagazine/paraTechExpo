@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Tech Expo</title>
+
+  <!-- css start here============================== -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- header start here============================== -->
+  <div id="header"></div>
+  <!-- header end here============================== -->
+
+  <!-- main start here============================== -->
+  <main>
+
+    <section class="exhibitor">
+      <div class="wrapper">
+        <div class="exhibitorHeading"> 
+          <h1>Exhibitor Booking</h1>
+          <h2>Connect Your Future with Business</h2>
+          <p>PARA Tech Expo will Accelerate your business. </p>
+          <p> Automation Engineer's attendence to Source Solutions for manufacturing automation is the target audience.
+          </p>
+          <p>Our mantra is industrial automation leads to excellence.</p>
+          <p>PARA with Tech will Connect your Buyer & actual your Company users.</p>
+          <p>Your company Tecnology & innovation must be exhibited in full force Let's together achive our goals (march
+            of automation & manufacturing).</p>
+        </div>
+        <div class="exhibitorForm">
+          <h2>I Am Interested to Participate</h2>
+          <form>
+            <label>Your Name :</label>
+            <input type="text" name="exhibitorName" id="exhibitorName" placeholder="Your Name" required>
+
+            <label>Company Name :</label>
+            <input type="text" name="exhibitorCompanyName" id="exhibitorCompanyName" placeholder="Company Name"
+              required>
+
+            <label>Your Email :</label>
+            <input type="email" name="exhibitorCompanyEmail" id="exhibitorCompanyEmail" placeholder="Your Email"
+              required>
+
+            <label>Your Number :</label>
+            <input type="tel" name="exhibitorCompanyNumber" id="exhibitorCompanyNumber" placeholder="Your Number"
+              required>
+
+            <input type="submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- main end here============================== -->
+
+  <!-- footer start here============================== -->
+  <div id="footer"></div>
+  <!-- footer end here============================== -->
+
+  <!-- javascript start here========================= -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+</body>
+
+</html>

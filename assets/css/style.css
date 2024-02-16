@@ -1,48 +1,374 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* wrapper============================== */
+.wrapper {
+  max-width: 1365px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* similar text============================ */
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* |header start here?=================== */
+header {
+  background-color: #000;
+  padding: 10px 0;
+  z-index: 1;
+  position: sticky;
+}
+
+
+header .wrapper,
+header .navbarList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar {
+  width: 50%;
+}
+
+header .navbar a {
+  color: #fff;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+header .navbar a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+header #logo {
+  width: 200px;
+  z-index: 1;
+}
+
+/* mobile button icons start here=========================== */
+.mobileBtn {
+  font-size: 40px;
+  z-index: 1;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+}
+
+.mobileBtn:hover {
+  border: 1px solid #fff;
+}
+
+.mobileBtn .mobileBtnIcon[name=close-outline] {
+  display: none;
+}
+
+/* mobile button icons end here=========================== */
+/* header end here======================= */
+
+/* banner start here================= */
+.banner {
+  position: relative;
+}
+
+.banner #paraBanner {
+  width: 100%;
+  filter: brightness(20%);
+  /* height: 300px !important; */
+}
+
+.banner .bannerText {
+  position: absolute;
+  line-height: 1.6;
+  top: 20%;
+}
+
+.banner .bannerText h2,
+.banner .bannerText ul {
+  font-size: 40px;
+  color: #fff;
+}
+
+
+.banner .bannerText a {
+  color: #000;
+  font-size: 15px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  padding: 10px;
+  margin: 15px 0;
+  width: 30%;
+  justify-content: center;
+  transition: 2s;
+  border-radius: 10px;
+}
+
+.banner .bannerText a:hover {
+  width: 35%;
+  /* background-color: #fff; */
+  /* color: #000; */
+  border-radius: 10px 10px 50px 10px;
+}
+
+/* banner end here================= */
+
+/* participation start here==================== */
+.participation{
+  text-align: center;
+  padding: 80px 0;
+}
+
+.participation h3{
+  font-size: 30px;
+  justify-content: center;
+}
+
+.participation p{
+  padding: 10px 0 50px 0;
+  font-size: 20px;
+}
+
+.participation .participateBlog{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.participation .participateBlog figure{
+  width: 20%;
+  border: 1px solid #000;
   
+}
+
+.participation .participateBlog figcaption{
+  padding: 10px 0;
+  color: black;
+  font-weight: bold;
+}
+
+.participation .participateBlog a:hover{
+  content: 'click exhibitor';
+}
+
+.participation .participateBlog a{
+  flex-direction: column;
+  width: 100%;
+}
+/* participation end here==================== */
+
+/* exhibitor start section ========================= */
+.exhibitor h1 {
+  font-size: 40px;
+  animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+    color: darkcyan;
+  }
+
+  100% {
+    color: darkblue;
+  }
+}
+
+.exhibitor h2 {
+  font-size: 30px;
+}
+
+.exhibitor p {
+  font-size: 20px;
+}
+
+.exhibitor .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  line-height: 1.6;
+}
+
+.exhibitor .exhibitorHeading,
+.exhibitor .exhibitorForm {
+  width: 100%;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid #000;
+}
+
+.exhibitor .exhibitorForm form {
+  display: grid;
+}
+
+.exhibitor form input {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* exhibitor here section ========================== */
+
+/* footer end here======================= */
+footer {
+  border-top: 1px solid #000;
+  color: #fff;
+  text-align: center;
+}
+
+.upperFooter{
+  padding: 80px 0;
+  color: #000;
+}
+
+.upperFooter .wrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.upperFooter ul{
+  line-height: 2;
+}
+
+.upperFooter a{ 
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 1s;
+}
+
+.upperFooter a:hover{
+  color: #0008ff;
+  text-decoration-color: currentcolor;
+}
+
+.lowerFooter{
+  background-color: #000;
+
+  padding: 10px 0;
+
+}
+
+/* footer end here======================= */
+
+
+
+/* responsive start here========================= */
+@media screen and (max-width: 995px) {
+  header .navbar {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 786px) {
   header {
-    background-color: #333;
-    color: #fff;
+    position: relative;
+  }
+
+  header .navbar {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    height: 100vh;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .active .navbar {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header .navbarList {
+    flex-direction: column;
+  }
+
+  header .navbarList li {
     padding: 10px;
-    text-align: center;
+    font-size: 25px;
   }
-  
-  .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+
+  .mobileBtn {
+    display: flex;
   }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+  .active .mobileBtn .mobileBtnIcon[name=close-outline] {
+    display: flex;
   }
-  
-  nav li {
-    display: inline;
-    margin-right: 15px;
+
+  .active .mobileBtn .mobileBtnIcon[name=menu-outline] {
+    display: none;
   }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
+
+  .banner .bannerText h2 {
+    font-size: 30px;
   }
-  
-  main {
-    padding: 20px;
+
+  .banner .bannerText a {
+    width: 40%;
   }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .banner .bannerText {
+    top: 10%;
+  }
+
+  .banner .bannerText h2 {
+    font-size: 20px;
+  }
+
+  .banner .bannerText p {
+    font-size: 12px;
+  }
+
+  .banner .bannerText a {
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .banner .bannerText a:hover {
     width: 100%;
   }
-  
+
+}
+
+@media screen and (max-width: 320px) {
+  header #logo {
+    width: 150px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
