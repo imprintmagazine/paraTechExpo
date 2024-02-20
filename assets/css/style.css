@@ -33,11 +33,15 @@ a {
 }
 
 /* |header start here?=================== */
+#header{
+  z-index: 1;
+  top: 0;
+  position: sticky;
+}
 header {
   background-color: #000;
   padding: 10px 0;
   z-index: 1;
-  position: sticky;
 }
 
 
@@ -103,7 +107,7 @@ header #logo {
 .banner .bannerText {
   position: absolute;
   line-height: 1.6;
-  top: 20%;
+  top: 15%;
 }
 
 .banner .bannerText h2,
@@ -142,7 +146,7 @@ header #logo {
 }
 
 .participation h3{
-  font-size: 30px;
+  font-size: 35px;
   justify-content: center;
 }
 
@@ -153,12 +157,13 @@ header #logo {
 
 .participation .participateBlog{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .participation .participateBlog figure{
-  width: 20%;
+  width: 250px;
+  margin: 10px;
   border: 1px solid #000;
   
 }
@@ -169,13 +174,27 @@ header #logo {
   font-weight: bold;
 }
 
-.participation .participateBlog a:hover{
-  content: 'click exhibitor';
-}
-
 .participation .participateBlog a{
   flex-direction: column;
   width: 100%;
+}
+
+
+
+.participation .overview{
+  margin-top: 50px;
+  padding: 50px 0;
+  background-color: #102866;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+}
+.participation .overviewList{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 /* participation end here==================== */
 
@@ -275,6 +294,20 @@ footer {
 
 
 /* responsive start here========================= */
+@media screen and (max-width: 1115px){
+  .banner #paraBanner {
+    height: 500px !important;
+  }
+
+  .banner .bannerText {
+    top: 10%;
+  }
+
+  .banner .bannerText h2, .banner .bannerText ul {
+    font-size: 30px;
+}
+}
+
 @media screen and (max-width: 995px) {
   header .navbar {
     width: 70%;
@@ -330,12 +363,19 @@ footer {
     display: none;
   }
 
-  .banner .bannerText h2 {
+  /* .banner .bannerText h2 {
     font-size: 30px;
-  }
+  } */
 
   .banner .bannerText a {
     width: 40%;
+  }
+
+  .participation h3 {
+    font-size: 25px;}
+
+  .participation .participateBlog figure{
+    width: 200px;
   }
 }
 
@@ -344,9 +384,9 @@ footer {
     top: 10%;
   }
 
-  .banner .bannerText h2 {
+  .banner .bannerText h2, .banner .bannerText ul {
     font-size: 20px;
-  }
+}
 
   .banner .bannerText p {
     font-size: 12px;
@@ -358,7 +398,7 @@ footer {
   }
 
   .banner .bannerText a:hover {
-    width: 100%;
+    width: 80%;
   }
 
 }
@@ -370,5 +410,13 @@ footer {
 
   footer {
     font-size: 12px;
+  }
+
+  .participation .participateBlog img{
+    height: 100px;
+  }
+
+    .participation .participateBlog figure{
+    width: 100px;
   }
 }
