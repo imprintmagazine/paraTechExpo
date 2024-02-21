@@ -33,11 +33,12 @@ a {
 }
 
 /* |header start here?=================== */
-#header{
+#header {
   z-index: 1;
   top: 0;
   position: sticky;
 }
+
 header {
   background-color: #000;
   padding: 10px 0;
@@ -100,14 +101,13 @@ header #logo {
 
 .banner #paraBanner {
   width: 100%;
-  filter: brightness(20%);
-  /* height: 300px !important; */
+  filter: brightness(50%);
 }
 
 .banner .bannerText {
   position: absolute;
   line-height: 1.6;
-  top: 15%;
+  top: 20%;
 }
 
 .banner .bannerText h2,
@@ -132,56 +132,54 @@ header #logo {
 
 .banner .bannerText a:hover {
   width: 35%;
-  /* background-color: #fff; */
-  /* color: #000; */
   border-radius: 10px 10px 50px 10px;
 }
 
 /* banner end here================= */
 
 /* participation start here==================== */
-.participation{
+.participation {
   text-align: center;
   padding: 80px 0;
 }
 
-.participation h3{
+.participation h3 {
   font-size: 35px;
   justify-content: center;
 }
 
-.participation p{
+.participation p {
   padding: 10px 0 50px 0;
   font-size: 20px;
 }
 
-.participation .participateBlog{
+.participation .participateBlog {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.participation .participateBlog figure{
+.participation .participateBlog figure {
   width: 250px;
   margin: 10px;
   border: 1px solid #000;
-  
+
 }
 
-.participation .participateBlog figcaption{
+.participation .participateBlog figcaption {
   padding: 10px 0;
   color: black;
   font-weight: bold;
 }
 
-.participation .participateBlog a{
+.participation .participateBlog a {
   flex-direction: column;
   width: 100%;
 }
 
 
 
-.participation .overview{
+.participation .overview {
   margin-top: 50px;
   padding: 50px 0;
   background-color: #102866;
@@ -189,13 +187,15 @@ header #logo {
   border-radius: 50px;
   text-align: center;
 }
-.participation .overviewList{
+
+.participation .overviewList {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 50px;
 }
+
 /* participation end here==================== */
 
 /* exhibitor start section ========================= */
@@ -255,21 +255,21 @@ footer {
   text-align: center;
 }
 
-.upperFooter{
+.upperFooter {
   padding: 80px 0;
   color: #000;
 }
 
-.upperFooter .wrapper{
+.upperFooter .wrapper {
   display: flex;
   justify-content: space-evenly;
 }
 
-.upperFooter ul{
+.upperFooter ul {
   line-height: 2;
 }
 
-.upperFooter a{ 
+.upperFooter a {
   color: #000;
   font-weight: bold;
   text-decoration: underline;
@@ -277,12 +277,12 @@ footer {
   transition: text-decoration-color 1s;
 }
 
-.upperFooter a:hover{
+.upperFooter a:hover {
   color: #0008ff;
   text-decoration-color: currentcolor;
 }
 
-.lowerFooter{
+.lowerFooter {
   background-color: #000;
 
   padding: 10px 0;
@@ -294,23 +294,29 @@ footer {
 
 
 /* responsive start here========================= */
-@media screen and (max-width: 1115px){
-  .banner #paraBanner {
-    height: 500px !important;
-  }
+@media screen and (max-width: 1115px) {
 
   .banner .bannerText {
-    top: 10%;
+    top: 25%;
   }
 
-  .banner .bannerText h2, .banner .bannerText ul {
+  .banner .bannerText h2,
+  .banner .bannerText ul {
     font-size: 30px;
-}
+  }
 }
 
 @media screen and (max-width: 995px) {
   header .navbar {
     width: 70%;
+  }
+
+  .banner #paraBanner {
+    height: 500px !important;
+  }
+
+  .banner .bannerText {
+    top: 20%;
   }
 }
 
@@ -372,21 +378,28 @@ footer {
   }
 
   .participation h3 {
-    font-size: 25px;}
+    font-size: 25px;
+  }
 
-  .participation .participateBlog figure{
+  .participation .participateBlog figure {
     width: 200px;
   }
 }
 
 @media screen and (max-width: 580px) {
+
+  .banner #paraBanner {
+    height: 300px !important;
+  }
+
   .banner .bannerText {
     top: 10%;
   }
 
-  .banner .bannerText h2, .banner .bannerText ul {
+  .banner .bannerText h2,
+  .banner .bannerText ul {
     font-size: 20px;
-}
+  }
 
   .banner .bannerText p {
     font-size: 12px;
@@ -412,11 +425,32 @@ footer {
     font-size: 12px;
   }
 
-  .participation .participateBlog img{
-    height: 100px;
+  .banner #paraBanner {
+    height: 400px !important;
   }
 
-    .participation .participateBlog figure{
-    width: 100px;
+  .participation h3 {
+    font-size: 20px;
+  }
+
+  .participation p {
+    font-size: 15px;
+  }
+
+  header .navbarList li {
+    font-size: 15px;
+  }
+
+
+  .participation .participateBlog figure {
+    width: 80px;
+  }
+
+  .participation .participateBlog a img {
+    height: 15vh;
+  }
+
+  .participation .participateBlog figcaption {
+    font-size: 10px;
   }
 }
