@@ -177,6 +177,10 @@ header #logo {
   width: 100%;
 }
 
+.participation .participateBlog a img {
+  height: 30vh;
+}
+
 
 
 .participation .overview {
@@ -188,12 +192,32 @@ header #logo {
   text-align: center;
 }
 
+.participation .overview h4 {
+  font-size: 25px;
+  justify-content: center;
+}
+
 .participation .overviewList {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.participation .overviewList ul {
+  line-height: 1.6;
+  margin: 10px;
+}
+
+.participation .overviewList li {
+  padding: 5px 10px;
+
+}
+
+.participation .overviewList li:first-child {
+  font-size: 20px;
+  color: yellow;
 }
 
 /* participation end here==================== */
@@ -262,6 +286,7 @@ footer {
 
 .upperFooter .wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -381,9 +406,16 @@ footer {
     font-size: 25px;
   }
 
+
+
   .participation .participateBlog figure {
     width: 200px;
   }
+
+  .participation .overview h4 {
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (max-width: 580px) {
@@ -414,43 +446,68 @@ footer {
     width: 80%;
   }
 
-}
-
-@media screen and (max-width: 320px) {
-  header #logo {
-    width: 150px;
+  .upperFooter .wrapper {
+    justify-content: left;
   }
 
-  footer {
-    font-size: 12px;
+  .upperFooter .wrapper ul {
+    margin: 10px;
   }
 
-  .banner #paraBanner {
-    height: 400px !important;
-  }
-
-  .participation h3 {
-    font-size: 20px;
-  }
-
-  .participation p {
+  .participation .overviewList li:first-child,
+  .participation .overview h4 {
     font-size: 15px;
   }
 
-  header .navbarList li {
-    font-size: 15px;
+  .participation .overviewList {
+    flex-direction: column;
   }
 
-
-  .participation .participateBlog figure {
-    width: 80px;
+  .participation .overview {
+    padding: 20px !important;
   }
 
-  .participation .participateBlog a img {
-    height: 15vh;
   }
 
-  .participation .participateBlog figcaption {
-    font-size: 10px;
+  @media screen and (max-width: 320px) {
+    header #logo {
+      width: 150px;
+    }
+
+    footer {
+      font-size: 12px;
+    }
+
+    .banner #paraBanner {
+      height: 400px !important;
+    }
+
+    .participation h3 {
+      font-size: 20px;
+    }
+
+    .participation p {
+      font-size: 15px;
+    }
+
+    header .navbarList li {
+      font-size: 15px;
+    }
+
+
+    .participation .participateBlog figure {
+      width: 80px;
+    }
+
+    .participation .participateBlog figcaption {
+      font-size: 10px;
+    }
+
+    .participation .participateBlog a img {
+      height: 15vh;
+    }
+
+    .upperFooter #infocastLogo {
+      width: 100%;
+    }
   }
-}
