@@ -1,0 +1,135 @@
+/* |header start here?=================== */
+#header {
+  z-index: 1;
+  top: 0;
+  position: sticky;
+}
+
+header {
+  background-color: #000;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+
+header .wrapper,
+header .navbarList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar {
+  width: 70%;
+}
+
+header .navbar a {
+  color: #fff;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+header .navbar a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+header #logo {
+  width: 200px;
+  z-index: 1;
+}
+
+/* mobile button icons start here=========================== */
+.mobileBtn {
+  font-size: 40px;
+  z-index: 1;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+}
+
+.mobileBtn:hover {
+  border: 1px solid #fff;
+}
+
+.mobileBtn .mobileBtnIcon[name=close-outline] {
+  display: none;
+}
+
+/* mobile button icons end here=========================== */
+/* header end here======================= */
+
+
+@media screen and (max-width: 995px) {
+  header .navbar {
+    width: 90%;
+  }
+  header .navbarList li {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 786px) {
+  header {
+    position: relative;
+  }
+
+  header .navbar {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    background-color: #000;
+    left: 0;
+    right: 0;
+    height: 100vh;
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .active .navbar {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header .navbarList {
+    flex-direction: column;
+  }
+
+  header .navbarList li {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .mobileBtn {
+    display: flex;
+  }
+
+  .active .mobileBtn .mobileBtnIcon[name=close-outline] {
+    display: flex;
+  }
+
+  .active .mobileBtn .mobileBtnIcon[name=menu-outline] {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  header #logo {
+    width: 150px;
+  }
+
+  header .navbarList li {
+    font-size: 15px;
+  }
+
+}

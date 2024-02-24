@@ -32,67 +32,6 @@ a {
   text-decoration: none;
 }
 
-/* |header start here?=================== */
-#header {
-  z-index: 1;
-  top: 0;
-  position: sticky;
-}
-
-header {
-  background-color: #000;
-  padding: 10px 0;
-  z-index: 1;
-}
-
-
-header .wrapper,
-header .navbarList {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .navbar {
-  width: 50%;
-}
-
-header .navbar a {
-  color: #fff;
-  padding: 5px;
-  border-bottom: 2px solid transparent;
-}
-
-header .navbar a:hover {
-  border-bottom: 2px solid #fff;
-}
-
-header #logo {
-  width: 200px;
-  z-index: 1;
-}
-
-/* mobile button icons start here=========================== */
-.mobileBtn {
-  font-size: 40px;
-  z-index: 1;
-  color: #fff;
-  display: none;
-  cursor: pointer;
-  border: 1px solid transparent;
-
-}
-
-.mobileBtn:hover {
-  border: 1px solid #fff;
-}
-
-.mobileBtn .mobileBtnIcon[name=close-outline] {
-  display: none;
-}
-
-/* mobile button icons end here=========================== */
-/* header end here======================= */
 
 /* banner start here================= */
 .banner {
@@ -222,56 +161,6 @@ header #logo {
 
 /* participation end here==================== */
 
-/* exhibitor start section ========================= */
-.exhibitor h1 {
-  font-size: 40px;
-  animation: effect 2s linear infinite;
-}
-
-@keyframes effect {
-  0% {
-    color: darkcyan;
-  }
-
-  100% {
-    color: darkblue;
-  }
-}
-
-.exhibitor h2 {
-  font-size: 30px;
-}
-
-.exhibitor p {
-  font-size: 20px;
-}
-
-.exhibitor .wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 0;
-  line-height: 1.6;
-}
-
-.exhibitor .exhibitorHeading,
-.exhibitor .exhibitorForm {
-  width: 100%;
-  padding: 30px;
-  margin: 20px;
-  border: 1px solid #000;
-}
-
-.exhibitor .exhibitorForm form {
-  display: grid;
-}
-
-.exhibitor form input {
-  padding: 10px;
-  margin: 10px 0;
-}
-
-/* exhibitor here section ========================== */
-
 /* footer end here======================= */
 footer {
   border-top: 1px solid #000;
@@ -332,9 +221,6 @@ footer {
 }
 
 @media screen and (max-width: 995px) {
-  header .navbar {
-    width: 70%;
-  }
 
   .banner #paraBanner {
     height: 500px !important;
@@ -346,58 +232,6 @@ footer {
 }
 
 @media screen and (max-width: 786px) {
-  header {
-    position: relative;
-  }
-
-  header .navbar {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    background-color: #000;
-    left: 0;
-    right: 0;
-    height: 100vh;
-
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .active .navbar {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  header .navbarList {
-    flex-direction: column;
-  }
-
-  header .navbarList li {
-    padding: 10px;
-    font-size: 25px;
-  }
-
-  .mobileBtn {
-    display: flex;
-  }
-
-  .active .mobileBtn .mobileBtnIcon[name=close-outline] {
-    display: flex;
-  }
-
-  .active .mobileBtn .mobileBtnIcon[name=menu-outline] {
-    display: none;
-  }
-
-  /* .banner .bannerText h2 {
-    font-size: 30px;
-  } */
-
   .banner .bannerText a {
     width: 40%;
   }
@@ -405,8 +239,6 @@ footer {
   .participation h3 {
     font-size: 25px;
   }
-
-
 
   .participation .participateBlog figure {
     width: 200px;
@@ -467,47 +299,39 @@ footer {
     padding: 20px !important;
   }
 
+}
+
+@media screen and (max-width: 320px) {
+
+  footer {
+    font-size: 12px;
   }
 
-  @media screen and (max-width: 320px) {
-    header #logo {
-      width: 150px;
-    }
-
-    footer {
-      font-size: 12px;
-    }
-
-    .banner #paraBanner {
-      height: 400px !important;
-    }
-
-    .participation h3 {
-      font-size: 20px;
-    }
-
-    .participation p {
-      font-size: 15px;
-    }
-
-    header .navbarList li {
-      font-size: 15px;
-    }
-
-
-    .participation .participateBlog figure {
-      width: 80px;
-    }
-
-    .participation .participateBlog figcaption {
-      font-size: 10px;
-    }
-
-    .participation .participateBlog a img {
-      height: 15vh;
-    }
-
-    .upperFooter #infocastLogo {
-      width: 100%;
-    }
+  .banner #paraBanner {
+    height: 400px !important;
   }
+
+  .participation h3 {
+    font-size: 20px;
+  }
+
+  .participation p {
+    font-size: 15px;
+  }
+
+  .participation .participateBlog figure {
+    width: 80px;
+  }
+
+  .participation .participateBlog figcaption {
+    font-size: 10px;
+  }
+
+  .participation .participateBlog a img {
+    height: 15vh;
+  }
+
+  .upperFooter #infocastLogo {
+    width: 100%;
+  }
+}

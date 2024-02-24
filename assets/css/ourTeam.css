@@ -1,0 +1,28 @@
+.ourTeam{
+    padding: 80px 0;
+}
+.ourTeam h2{
+    justify-content: center;
+}
+.ourTeam .team{
+    padding: 20px 0 0 0;
+}
+.ourTeam .team figure{
+    float: left;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.ourTeam .team figure,
+.ourTeam .team figcaption,
+.ourTeam .directorPara{
+    padding: 10px;
+}
+
+.ourTeam .directorPara p{
+    padding: 10px 0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+

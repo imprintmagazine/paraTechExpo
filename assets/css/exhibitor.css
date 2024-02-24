@@ -1,0 +1,87 @@
+/* exhibitor start section ========================= */
+.exhibitor h1 {
+    font-size: 40px;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        color: darkcyan;
+    }
+
+    100% {
+        color: darkblue;
+    }
+}
+
+.exhibitor h2 {
+    font-size: 30px;
+}
+
+.exhibitor p {
+    font-size: 20px;
+}
+
+.exhibitor .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    line-height: 1.6;
+}
+
+.exhibitor .exhibitorHeading,
+.exhibitor .exhibitorForm {
+    width: 100%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #000;
+}
+
+.exhibitor .exhibitorForm form {
+    display: grid;
+}
+
+.exhibitor form input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* exhibitor here section ========================== */
+
+@media screen and (max-width: 1115px) {
+    .exhibitor .wrapper {
+        flex-direction: column;
+    }
+    .exhibitor .exhibitorHeading,
+    .exhibitor .exhibitorForm {
+        margin:10px 0;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .exhibitor h2 {
+        font-size: 25px;
+    }
+
+    .exhibitor p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+
+
+    .exhibitor h1 {
+        font-size: 20px;
+    }
+
+    .exhibitor h2 {
+        font-size: 18px;
+    }
+
+    .exhibitor p {
+        font-size: 12px;
+    }
+}
