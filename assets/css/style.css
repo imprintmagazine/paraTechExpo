@@ -430,15 +430,7 @@ a {
   .banner .bannerText a:hover {
     width: 80%;
   }
-
-  .upperFooter .wrapper {
-    justify-content: left;
-  }
-
-  .upperFooter .wrapper ul {
-    margin: 10px;
-  }
-
+  
   .participation .overviewList li:first-child,
   .participation .overview h4 {
     font-size: 15px;
@@ -506,11 +498,4 @@ a {
     font-size: 15px;
   }
 
-  footer {
-    font-size: 12px;
-  }
-
-  .upperFooter #infocastLogo {
-    width: 100%;
-  }
 }
