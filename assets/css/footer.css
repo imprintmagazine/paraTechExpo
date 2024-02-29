@@ -1,0 +1,64 @@
+/* footer end here======================= */
+footer {
+    border-top: 1px solid #000;
+    color: #fff;
+    text-align: center;
+}
+
+.upperFooter {
+    padding: 80px 0;
+    color: #000;
+}
+
+.upperFooter .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.upperFooter ul {
+    line-height: 2;
+}
+
+.upperFooter a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 1s;
+}
+
+.upperFooter a:hover {
+    color: #0008ff;
+    text-decoration-color: currentcolor;
+}
+
+.lowerFooter {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+/* footer end here======================= */
+
+
+@media screen and (max-width: 580px) {
+    .upperFooter .wrapper {
+        justify-content: left;
+    }
+
+    .upperFooter .wrapper ul {
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    footer {
+        font-size: 12px;
+    }
+
+    .upperFooter #infocastLogo {
+        width: 100%;
+    }
+}

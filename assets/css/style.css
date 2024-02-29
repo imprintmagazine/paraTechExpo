@@ -213,11 +213,12 @@ a {
   line-height: 1.4;
 }
 
-.infocast #learnMore {
+.infocast #learnMore,
+.upcomingShow .showText a {
   color: #fff;
   background-color: #ff0000ff;
   margin-top: 10px;
-  padding: 20px 30px;
+  padding: 10px 30px;
   display: inline-flex;
   font-weight: bold;
   letter-spacing: 1px;
@@ -225,53 +226,137 @@ a {
   font-size: 20px;
 }
 
-.infocast #learnMore:hover {
+.infocast #learnMore:hover,
+.upcomingShow .showText a:hover {
   border-radius: 20px;
 }
 
 /* infocast section here============================= */
 
-/* footer end here======================= */
-footer {
-  border-top: 1px solid #000;
-  color: #fff;
+/* upcoming show start here================================== */
+.upcomingShow {
   text-align: center;
+  background-color: #000;
+  padding: 80px 0;
+  line-height: 1.6;
 }
 
-.upperFooter {
-  /* padding: 80px 0; */
-  color: #000;
+.upcomingShow .showHeading h3 {
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 30px;
 }
 
-.upperFooter .wrapper {
+.upcomingShow .showHeading h3,
+.upcomingShow .showText a,
+.upcomingShow .showText h4 {
+  justify-content: center;
+}
+
+.upcomingShow .showText ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.upcomingShow .showText li {
+  padding: 10px;
+  width: 40%;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.upcomingShow .showText span {
+  display: block;
+}
+
+.upcomingShow .showText ul img {
+  width: 50%;
+}
+
+.upcomingShow .showText h4 {
+  font-size: 30px;
+}
+
+/* upcoming show end here==================================== */
+
+/* <!-- why exhibit with us? section start here==================================================================== --> */
+
+.exhibitWithUs {
+  padding: 80px 0;
+}
+
+.exhibitWithUs h3 {
+  justify-content: center;
+  padding-bottom: 50px;
+  font-size: 35px;
+}
+
+.exhibitWithUs .exhibitList ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.upperFooter ul {
-  line-height: 2;
+.exhibitWithUs .exhibitList li {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
 }
 
-.upperFooter a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: text-decoration-color 1s;
+.exhibitWithUs .exhibitList h4 {
+  padding-bottom: 20px;
+  font-size: 25px;
 }
 
-.upperFooter a:hover {
-  color: #0008ff;
-  text-decoration-color: currentcolor;
+.exhibitWithUs .exhibitList p {
+  line-height: 1.4;
 }
 
-.lowerFooter {
+/* <!-- why exhibit with us? section start here==================================================================== --> */
+
+/* chat with us section start here========================================= */
+.chatWithUs{
+  padding: 80px 0;
   background-color: #000;
-  padding: 10px 0;
+  color: #fff;
+  line-height: 1.6;
+}
+.chatWithUs .chatWithUsText span{
+  font-size: 30px;
+}
+.chatWithUs .chatWithUsText h3{
+  font-size: 50px;
+}
+.chatWithUs .chatWithUsText p{
+  font-size: 20px;
+}
+.chatWithUs .wrapper{
+  display: flex;
 }
 
-/* footer end here======================= */
+.chatWithUs .chatWithUsForm {
+  width: 100%;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  display: grid;
+}
+
+.chatWithUs .chatWithUsForm h3{
+  font-size: 30px;
+}
+
+.chatWithUs .chatWithUsForm input {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* chat with us section end here========================================= */
+
+
+
 
 /* responsive start here========================= */
 @media screen and (max-width: 1115px) {
@@ -387,9 +472,7 @@ footer {
 
 @media screen and (max-width: 320px) {
 
-  footer {
-    font-size: 12px;
-  }
+
 
   .banner #paraBanner {
     height: 400px !important;
@@ -421,6 +504,10 @@ footer {
 
   .participation .participateBlog a {
     font-size: 15px;
+  }
+
+  footer {
+    font-size: 12px;
   }
 
   .upperFooter #infocastLogo {
