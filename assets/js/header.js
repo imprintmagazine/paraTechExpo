@@ -9,7 +9,7 @@ const toggleNavbar = () => {
 
 const scrollFunction = () => {
   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-  logo.style.width = scrollTop > 50 ? "100px" : "150px";
+  logo.style.width = scrollTop > 0 ? "100px" : "150px";
 };
 
 mobileNavbar.addEventListener("click", toggleNavbar);
