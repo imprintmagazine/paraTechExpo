@@ -53,6 +53,12 @@ a {
 .banner .bannerText ul {
   font-size: 40px;
   color: #fff;
+  display: block;
+
+}
+
+.banner .bannerText h2 p{
+  padding: 20px 0;
 }
 
 
@@ -406,7 +412,7 @@ a {
 
 @media screen and (max-width: 580px) {
   .banner #paraBanner {
-    height: 300px !important;
+    height: 400px !important;
   }
 
   .banner .bannerText {
@@ -418,9 +424,9 @@ a {
     font-size: 20px;
   }
 
-  .banner .bannerText p {
+  /* .banner .bannerText p {
     font-size: 12px;
-  }
+  } */
 
   .banner .bannerText a {
     width: 60%;
@@ -466,9 +472,9 @@ a {
 
 
 
-  .banner #paraBanner {
+  /* .banner #paraBanner {
     height: 400px !important;
-  }
+  } */
 
   .participation h3 {
     font-size: 20px;
@@ -499,3 +505,11 @@ a {
   }
 
 }
+
+@media screen and (max-width: 285px) {
+
+
+
+  .banner #paraBanner {
+    height: 450px !important;
+  }}
