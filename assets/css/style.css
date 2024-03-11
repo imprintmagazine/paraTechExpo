@@ -57,7 +57,7 @@ a {
 
 }
 
-.banner .bannerText h2 p{
+.banner .bannerText h2 p {
   padding: 50px 0;
 }
 
@@ -103,12 +103,12 @@ a {
 }
 
 .participation #paraBlackLogo {
-  width: 30%;
+  width: 300px;
 }
 
 .participation .participateBlog {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -125,73 +125,83 @@ a {
   font-size: 30px;
   width: 250px;
   height: 150px;
-  background-color: #102866bc;
+  background-color: #102866df;
   align-items: center;
   justify-content: center;
 }
 
 .participation .participateBlog a:hover {
-  background-color: #102866df;
+  background-color: #102866;
 }
 
-/* .participation .participateBlog figure {
-  width: 250px;
-  margin: 10px;
-  border: 1px solid #000;
-} */
 
-/* .participation .participateBlog figcaption {
-  padding: 10px 0;
-  color: black;
-  font-weight: bold;
-} */
 
-/* .participation .participateBlog a {
-  flex-direction: column;
-  width: 100%;
-} */
-
-/* .participation .participateBlog a img {
-  height: 30vh;
-} */
-
+/* Marquee styles */
 .participation .overview {
   margin-top: 50px;
-  padding: 30px 0;
   background-color: #102866;
+  padding: 30px 0;
   color: #fff;
-  border-radius: 50px;
-  text-align: center;
 }
 
 .participation .overview h4 {
   font-size: 25px;
+  padding-bottom: 30px;
   justify-content: center;
+
 }
 
-.participation .overviewList {
+.marquee {
+  --gap: 1rem;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 20px;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
 }
 
-.participation .overviewList ul {
-  line-height: 1.6;
-  margin: 10px;
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 30s linear infinite;
 }
 
-.participation .overviewList li {
-  padding: 5px 10px;
+.marquee__content li {
+  padding-bottom: 10px;
 }
 
-.participation .overviewList li:first-child {
+.marquee__content li:first-child {
+  color: #ffff00;
   font-size: 20px;
-  color: yellow;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* Pause animation when reduced-motion is set */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__content {
+    animation-play-state: paused !important;
+  }
+}
+
+.marquee--hover-pause:hover .marquee__content {
+  animation-play-state: paused;
 }
 
 /* participation end here==================== */
+
+
 
 /* infocast section here============================= */
 .infocast {
@@ -297,23 +307,28 @@ a {
   justify-content: center;
   padding-bottom: 20px;
   font-size: 35px;
+  text-align: center;
 }
 
 .joinPARA .joinPARAList {
   display: flex;
+  justify-content: space-between;
   /* align-items: center; */
 }
-.joinPARA .joinPARAList div{
-  margin:0 20px;
+
+.joinPARA .joinPARAList div {
+  margin: 0 20px;
 
 }
-.joinPARA .joinPARAList h4{
+
+.joinPARA .joinPARAList h4 {
   font-size: 25px;
 }
 
-.joinPARA .joinPARAList p{
+.joinPARA .joinPARAList p {
   padding-bottom: 10px;
 }
+
 /* .exhibitWithUs .exhibitList ul {
   display: flex;
   flex-wrap: wrap;
@@ -338,22 +353,26 @@ a {
 /* <!-- why exhibit with us? section start here==================================================================== --> */
 
 /* chat with us section start here========================================= */
-.chatWithUs{
+.chatWithUs {
   padding: 80px 0;
   background-color: #000;
   color: #fff;
   line-height: 1.6;
 }
-.chatWithUs .chatWithUsText span{
+
+.chatWithUs .chatWithUsText span {
   font-size: 30px;
 }
-.chatWithUs .chatWithUsText h3{
+
+.chatWithUs .chatWithUsText h3 {
   font-size: 50px;
 }
-.chatWithUs .chatWithUsText p{
+
+.chatWithUs .chatWithUsText p {
   font-size: 20px;
 }
-.chatWithUs .wrapper{
+
+.chatWithUs .wrapper {
   display: flex;
 }
 
@@ -367,7 +386,7 @@ a {
   display: grid;
 }
 
-.chatWithUs .chatWithUsForm h3{
+.chatWithUs .chatWithUsForm h3 {
   font-size: 30px;
 }
 
@@ -377,9 +396,10 @@ a {
 }
 
 
-.chatWithUs .chatWithUsForm{
+.chatWithUs .chatWithUsForm {
   width: 50%;
 }
+
 /* chat with us section end here========================================= */
 
 
@@ -400,6 +420,16 @@ a {
   .infocast {
     padding: 80px 0;
   }
+
+  .participation .participateBlog a {
+    width: 200px;
+    padding: 20px;
+  }
+
+  .joinPARA .joinPARAList div {
+    margin: 0;
+    width: 49%;
+  }
 }
 
 @media screen and (max-width: 995px) {
@@ -409,6 +439,30 @@ a {
 
   .banner .bannerText {
     top: 20%;
+  }
+
+  .participation .participateBlog a {
+    width: 400px;
+  }
+
+  .joinPARA .joinPARAList {
+    flex-direction: column;
+  }
+
+  .joinPARA .joinPARAList div {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .joinPARA .joinPARAList div h4 {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .participation .participateBlog a {
+    width: 340px;
   }
 }
 
@@ -421,17 +475,36 @@ a {
     width: 40%;
   }
 
-  .infocast h3,
-  .participation h3 {
-    font-size: 25px;
+  .infocast h3{
+    font-size: 20px;
+  }
+  .infocast span{
+    font-size: 15px;
+  }
+  .infocast p{
+    font-size: 13px;
   }
 
   /* .participation .participateBlog figure {
     width: 200px;
   } */
 
+
+  .participation h3 {
+    font-size: 25px;
+  }
   .participation .overview h4 {
     font-size: 20px;
+  }
+  .participation .participateBlog a {
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+  .participation .participateBlog a {
+    width: 250px;
   }
 }
 
@@ -447,7 +520,7 @@ a {
     font-size: 20px;
   }
 
-  .banner .bannerText h2 p{
+  .banner .bannerText h2 p {
     padding: 30px 0;
   }
 
@@ -459,37 +532,42 @@ a {
   .banner .bannerText a:hover {
     width: 80%;
   }
-  
-  .participation .overviewList li:first-child,
+
+  .infocast h3,
+  .infocast span{
+    font-size: 15px;
+  }
+
+  .infocast #infocastLogo{
+    width: 200px;
+  }
+
+  .marquee__content li:first-child,
   .participation .overview h4 {
     font-size: 15px;
   }
 
-  .participation .overviewList {
-    flex-direction: column;
-  }
-
-  .participation .overview {
-    padding: 20px !important;
-  }
 
   .participation .participateBlog a {
-    width: 150px;
-  }
-
-  .participation .participateBlog a {
-    font-size: 18px;
-  }
-
-  .infocast span,
-  .infocast p {
-    font-size: 15px;
-  }
-
-  .infocast h3 {
+    width: 200px;
     font-size: 20px;
   }
+
+
+
 }
+
+@media screen and (max-width: 460px) {
+  .participation .participateBlog a {
+    width: 100px;
+    font-size: 15px;
+  }
+  .participation #paraBlackLogo {
+    width: 200px;
+  }
+}
+
+
 
 @media screen and (max-width: 320px) {
 
@@ -519,14 +597,6 @@ a {
     height: 15vh;
   } */
 
-  .participation .participateBlog a {
-    width: 100px;
-  }
-
-  .participation .participateBlog a {
-    font-size: 15px;
-  }
-
 }
 
 @media screen and (max-width: 285px) {
@@ -535,4 +605,5 @@ a {
 
   .banner #paraBanner {
     height: 450px !important;
-  }}
+  }
+}
