@@ -1,0 +1,59 @@
+/* chat with us section start here========================================= */
+.chatWithUs {
+    padding: 80px 0;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.chatWithUs .chatWithUsText span {
+    font-size: 30px;
+}
+
+.chatWithUs .chatWithUsText h3 {
+    font-size: 50px;
+}
+
+.chatWithUs .chatWithUsText p {
+    font-size: 20px;
+}
+
+.chatWithUs .wrapper {
+    display: flex;
+}
+
+.chatWithUs .chatWithUsForm {
+    width: 100%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+}
+
+.chatWithUs .chatWithUsForm h3 {
+    font-size: 30px;
+}
+
+.chatWithUs .chatWithUsForm input {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+/* chat with us section end here========================================= */
+
+@media screen and (max-width: 786px) {
+    .chatWithUs .wrapper {
+        flex-direction: column;
+    }
+
+    .chatWithUs .chatWithUsForm {
+        margin:20px 0;
+    }
+
+    .chatWithUs .chatWithUsText h3 {
+        font-size: 40px;
+    }
+}
