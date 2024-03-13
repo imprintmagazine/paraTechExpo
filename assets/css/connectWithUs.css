@@ -1,0 +1,66 @@
+/* connect with us section start here========================================= */
+.connectWithUs {
+    padding: 80px 0;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.connectWithUs .connectWithUsText span {
+    font-size: 30px;
+}
+
+.connectWithUs .connectWithUsText h3 {
+    font-size: 50px;
+}
+
+.connectWithUs .connectWithUsText p {
+    font-size: 20px;
+}
+
+.connectWithUs .wrapper {
+    display: flex;
+}
+
+.connectWithUs .connectWithUsForm {
+    border-radius: 50px 0;
+    width: 40%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+}
+
+.connectWithUs .connectWithUsForm h3 {
+    font-size: 20px;
+}
+
+.connectWithUs .connectWithUsForm input {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.connectWithUsForm span,
+.connectWithUsForm label,
+.connectWithUs .connectWithUsForm input {
+    font-size: 12px;
+}
+
+
+/* connect with us section end here========================================= */
+
+@media screen and (max-width: 786px) {
+    .connectWithUs .wrapper {
+        flex-direction: column;
+    }
+
+    .connectWithUs .connectWithUsForm {
+        margin: 20px 0;
+    }
+
+    .connectWithUs .connectWithUsText h3 {
+        font-size: 40px;
+    }
+}

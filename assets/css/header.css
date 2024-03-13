@@ -27,6 +27,7 @@ header .navbar a {
   color: #fff;
   padding: 5px;
   border-bottom: 2px solid transparent;
+  text-align:center;
 }
 
 header .navbar a:hover {
