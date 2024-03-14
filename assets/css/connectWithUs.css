@@ -6,15 +6,26 @@
     line-height: 1.6;
 }
 
+.connectWithUsText h2{
+    font-size: 50px;
+}
+
+.connectWithUs .connectWithUsText h3 {
+    font-size: 40px;
+}
+
 .connectWithUs .connectWithUsText span {
     font-size: 30px;
 }
 
-.connectWithUs .connectWithUsText h3 {
-    font-size: 50px;
+.connectWithUs .connectWithUsText p {
+    font-size: 20px;
+    padding: 10px 0;
 }
 
-.connectWithUs .connectWithUsText p {
+.connectWithUsText li{
+    list-style-type: disc;
+    margin-left: 20px;
     font-size: 20px;
 }
 
