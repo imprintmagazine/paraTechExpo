@@ -27,7 +27,7 @@ header .navbar a {
   color: #fff;
   padding: 5px;
   border-bottom: 2px solid transparent;
-  text-align:center;
+  text-align: center;
 }
 
 header .navbar a:hover {
@@ -59,6 +59,38 @@ header #logo {
 }
 
 /* mobile button icons end here=========================== */
+
+/* dropdown option==================================== */
+.navbar .exhibitDropdown {
+  position: relative;
+}
+
+.navbar .dropdownOption {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  width: 170px;
+  background-color: #000;
+  display: none;
+  z-index: 1;
+  border-radius: 0  0 30px 30px;
+}
+
+.navbar .dropdownOption li {
+  padding: 8px 10px;
+  text-align: center;
+
+}
+
+.navbar .dropdownOption a {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.exhibitDropdown:hover .dropdownOption{
+  display: block !important;
+}
+/* dropdown option==================================== */
 /* header end here======================= */
 
 
@@ -66,6 +98,7 @@ header #logo {
   header .navbar {
     width: 90%;
   }
+
   header .navbarList li {
     font-size: 15px;
   }
