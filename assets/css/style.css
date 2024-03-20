@@ -129,7 +129,7 @@ a {
   background-color: #102866df;
   align-items: center;
   justify-content: center;
-  border-radius: 40px 0;
+  /* border-radius: 40px 0; */
 }
 
 .participation .participateBlog a:hover {
@@ -144,7 +144,7 @@ a {
   background-color: #102866;
   padding: 30px 0;
   color: #fff;
-  border-radius: 50px 0;
+  /* border-radius: 50px 0; */
 }
 
 .participation .overview h4 {
@@ -285,7 +285,7 @@ a {
   width: 40%;
   margin: 10px;
   background-color: #fff;
-  border-radius: 100px 0;
+  /* border-radius: 100px 0; */
 
 }
 

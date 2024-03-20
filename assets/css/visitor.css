@@ -1,0 +1,215 @@
+/* visitor start section ========================= */
+.visitor h1 {
+    font-size: 50px;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        color: darkcyan;
+    }
+
+    100% {
+        color: darkblue;
+    }
+}
+
+.visitor h2 {
+    font-size: 40px;
+}
+
+.visitor p {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.visitor .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    line-height: 1.6;
+}
+
+.visitor .visitorHeading {
+    width: 100% !important;
+}
+
+.visitor .visitorForm {
+    width: 60%;
+    padding: 20px 30px;
+    margin: 20px;
+    border: 1px solid #000;
+}
+
+.visitor .visitorForm h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.visitor .visitorForm form {
+    display: grid;
+}
+
+.visitor .visitorForm div {
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+
+.visitor .visitorForm div input {
+    padding: 10px 40px;
+}
+
+.visitor .visitorForm .mumbaiAttractions,
+.visitor .visitorForm .hotelRoom {
+    display: flex;
+}
+.visitor .visitorForm .mumbaiAttractions input,
+.visitor .visitorForm .hotelRoom input{
+    margin-right: 10px;
+}
+
+.visitor .visitorForm div::before {
+    position: absolute;
+    font-family: "fontAwesome";
+    text-indent: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.visitor .visitorForm .visitorName::before {
+    content: "\f007";
+}
+
+.visitor .visitorForm .visitorDesignation::before {
+    content: "\f0c0";
+}
+
+.visitor .visitorForm .visitorCompany::before {
+    content: "\f0f7";
+}
+
+.visitor .visitorForm .visitorEmail::before {
+    content: "\f0e0";
+}
+
+.visitor .visitorForm .visitorMobile::before {
+    content: "\f098";
+}
+
+.visitor form input,
+.visitor .visitorForm select {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.visitor .visitorForm span,
+.visitor .visitorForm input,
+.visitor .visitorForm option {
+    font-size: 12px;
+    align-items: center;
+}
+
+#visitorSubmit {
+    background-color: #005c00;
+    border: transparent;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+#visitorSubmit:hover {
+    background-color: #008000;
+}
+
+
+/* visitor here section ========================== */
+
+/* why visit start here===================== */
+.whyVisit,
+.exhibitorProfile {
+    padding: 80px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.whyVisit h2,
+.whoShouldVisit h2,
+.exhibitorProfile h2 {
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.whyVisit .whyVisitInfo,
+.whoShouldVisit .whoShouldVisitInfo,
+.exhibitorProfile .exhibitorProfileInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.whyVisit .whyVisitInfo div {
+    padding: 30px 0;
+    /* flex-basis: 400px; */
+    width: 350px;
+    line-height: 1.4;
+}
+
+.whyVisit .whyVisitInfo h3 {
+    font-size: 30px;
+
+}
+
+.whyVisit .whyVisitInfo p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* why visit end here===================== */
+
+/* who Should Visit start here=========== */
+
+.whoShouldVisit {
+    padding: 80px 0;
+}
+
+.whoShouldVisit .whoShouldVisitInfo div {
+    background-color: #000;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.whoShouldVisit .whoShouldVisitInfo h3 {
+    padding-bottom: 10px;
+}
+
+/* who Should Visit end here=========== */
+
+
+/* exhibitor Profile start here================================= */
+
+.exhibitorProfile .exhibitorProfileInfo h3 {
+    padding: 40px 20px;
+    margin: 10px;
+    background-color: #fff;
+    color: #000;
+    justify-content: center;
+}
+
+.exhibitorProfileInfo .slick-dots li button:before,
+.exhibitorProfileInfo .slick-dots li.slick-active button:before {
+    color: #fff !important;
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+/* exhibitor Profile end here=========================== */

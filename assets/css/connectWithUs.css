@@ -6,7 +6,7 @@
     line-height: 1.6;
 }
 
-.connectWithUsText h2{
+.connectWithUsText h2 {
     font-size: 50px;
 }
 
@@ -23,7 +23,7 @@
     padding: 10px 0;
 }
 
-.connectWithUsText li{
+.connectWithUsText li {
     list-style-type: disc;
     margin-left: 20px;
     font-size: 20px;
@@ -44,34 +44,117 @@
     display: grid;
 }
 
+.connectWithUs .connectWithUsForm div {
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
 .connectWithUs .connectWithUsForm h3 {
+    font-size: 30px;
+    align-items: center;
+    line-height: 0;
+}
+
+.connectWithUs .connectWithUsForm div input {
+    padding: 10px 40px;
+}
+
+.connectWithUs .connectWithUsForm div::before {
+    position: absolute;
+    font-family: "fontAwesome";
+    text-indent: 0;
+    padding: 10px;
     font-size: 20px;
 }
 
-.connectWithUs .connectWithUsForm input {
-    padding: 5px;
-    margin: 5px 0;
+.connectWithUs .connectWithUsForm .name::before {
+    content: "\f007";
+}
+
+.connectWithUs .connectWithUsForm .company::before {
+    content: "\f0f7";
+}
+
+.connectWithUs .connectWithUsForm .email::before {
+    content: "\f0e0";
+}
+
+.connectWithUs .connectWithUsForm .mobile::before {
+    content: "\f098";
+}
+
+.connectWithUs .connectWithUsForm .specifyQueries::before {
+    content: "\f059";
 }
 
 .connectWithUsForm span,
-.connectWithUsForm label,
-.connectWithUs .connectWithUsForm input {
+.connectWithUs .connectWithUsForm div {
     font-size: 12px;
+    align-self: center;
 }
 
+#submit {
+    background-color: #005c00;
+    border: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: #008000;
+}
 
 /* connect with us section end here========================================= */
+@media screen and (max-width: 1115px) {
+    .connectWithUs .connectWithUsForm {
+        width: 70%;
+    }
+    .connectWithUs .connectWithUsText h3 {
+        font-size: 30px;
+    }
+}
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 995px) {
     .connectWithUs .wrapper {
         flex-direction: column;
     }
-
-    .connectWithUs .connectWithUsForm {
-        margin: 20px 0;
+    .connectWithUs .connectWithUsForm h3 {
+        line-height: 1.6;
     }
-
     .connectWithUs .connectWithUsText h3 {
         font-size: 40px;
+        line-height: 1.3;
+    }
+    .connectWithUs .connectWithUsText p {
+        padding: 5px 0;
+    }
+    .connectWithUs .connectWithUsForm {
+        width: 100%;
+        margin:10px 0;
+    }
+    .connectWithUs .connectWithUsForm div input {
+        margin: 10px 0;
+    }
+
+    #submit {
+        padding: 10px 0;
     }
 }
+
+@media screen and (max-width: 786px) {
+
+    .connectWithUs .connectWithUsText h3 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .connectWithUs .connectWithUsText h3 {
+        font-size: 20px;
+    }
+    .connectWithUsText li,
+    .connectWithUs .connectWithUsText p {
+        font-size: 15px;
+}}

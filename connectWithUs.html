@@ -7,58 +7,71 @@
   <title>Para Tech Expo</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/connectWithUs.css">
+
+  <!-- font awesome cdn 4======================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css"
+    integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <!-- chat with us section end here==================================================================== -->
+  <!-- chat with us section end here==================================================================== -->
 
-    <section class="connectWithUs">
-      <div class="wrapper">
-        <div class="connectWithUsText">
-          <h2>
-            Connect
-          </h2>
-          <h3>Book Your Exhibit Participation at PARA Tech Expo</h3>
-          <p>Exercise your company potential with our conference</p>
-          <p>Automation pundits will teach on future technology </p>
-          <p>Showcase, your latest technology and connect with your companies future business in industrial automation projects.
-          <ul>
-            <h3>Achieve important objectives</h3>
-            <li>Brand promotion.</li>
-            <li>Talent sourcing. </li>
-            <li>R&D Ideas</li>
-            <li>Networking</li>
-          </ul>
+  <section class="connectWithUs">
+    <div class="wrapper">
+      <div class="connectWithUsText">
+        <h2>
+          Connect
+        </h2>
+        <h3>Book Your Exhibit Participation at PARA Tech Expo</h3>
+        <p>Exercise your company potential with our conference</p>
+        <p>Automation pundits will teach on future technology </p>
+        <p>Showcase, your latest technology and connect with your company's future business in industrial automation
+          projects.
+        <ul>
+          <h3>Achieve important objectives</h3>
+          <li>Brand promotion.</li>
+          <li>Talent sourcing. </li>
+          <li>R&D Ideas</li>
+          <li>Networking</li>
+        </ul>
 
 
 
-          </p>
-        </div>
-        <form class="connectWithUsForm">
-          <h3>Connect With Us</h3>
-          <span>We will connect and provide exhibit details Booth sizes, Sponserships, Conference opportunities and more</span>
-          <label>Name :</label>
-          <input type="text" name="name" id="userName" placeholder="Name" required>
-
-          <label>Company Name :</label>
-          <input type="text" name="company name" id="companyName" placeholder="Company Name" required>
-
-          <label>Email :</label>
-          <input type="email" name="email" id="yourEmail" placeholder="Email" required>
-
-          <label>Phone Number :</label>
-          <input type="tel" name="phone number" id="phoneNumber" placeholder="Phone Number" required>
-
-          <label>Specify queries</label>
-          <input type="text" name="specify queries" id="specifyQueries" placeholder="Specify queries" required>
-
-          <input type="submit">
-        </form>
+        </p>
       </div>
-    </section>
+      <form class="connectWithUsForm">
+        <h3>Connect With Us</h3>
+        <span>We will connect and provide exhibit details, booth sizes, sponsorships, conference opportunities and
+          more</span>
+        
+        <div class="name">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
 
-    <!-- chat with us section end here==================================================================== -->
+        <div class="company">
+          <input type="text" name="company" id="company" placeholder="Company" required>
+        </div>
+
+        <div class="email">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="mobile">
+          <input type="tel" name="mobile" id="mobile" placeholder="Mobile" required>
+        </div>
+
+        <div class="specifyQueries">
+          <input type="text" name="specify queries" id="specifyQueries" placeholder="Specify Queries....." required>
+        </div>
+
+        <button type="submit" id="submit">submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- chat with us section end here==================================================================== -->
 
   </main>
 </body>

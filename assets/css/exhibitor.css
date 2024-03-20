@@ -1,6 +1,6 @@
 /* exhibitor start section ========================= */
 .exhibitor h1 {
-    font-size: 40px;
+    font-size: 50px;
     animation: effect 2s linear infinite;
 }
 
@@ -15,11 +15,12 @@
 }
 
 .exhibitor h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .exhibitor p {
     font-size: 20px;
+    padding: 5px 0;
 }
 
 .exhibitor .wrapper {
@@ -28,24 +29,47 @@
     padding: 80px 0;
     line-height: 1.6;
 }
+.exhibitor .exhibitorHeading{
+    width: 100% !important;
+}
 
-.exhibitor .exhibitorHeading,
 .exhibitor .exhibitorForm {
-    width: 100%;
-    padding: 30px;
+    width: 40%;
+    padding:20px 30px;
     margin: 20px;
     border: 1px solid #000;
 }
-
+.exhibitor .exhibitorForm h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
 .exhibitor .exhibitorForm form {
     display: grid;
 }
 
 .exhibitor form input {
-    padding: 10px;
+    padding: 5px;
     margin: 10px 0;
 }
 
+.exhibitor .exhibitorForm span,
+.exhibitor .exhibitorForm label,
+.exhibitor .exhibitorForm input {
+    font-size: 12px;
+    align-self: center;
+}
+
+#exhibitorSubmit{
+    background-color: #005c00;
+    border: transparent;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+#exhibitorSubmit:hover{
+    background-color: #008000;
+}
 /* exhibitor here section ========================== */
 
 @media screen and (max-width: 1115px) {
