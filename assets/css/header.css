@@ -60,12 +60,16 @@ header #logo {
 
 /* mobile button icons end here=========================== */
 
-/* dropdown option==================================== */
-.navbar .exhibitDropdown {
+/* exhibitor option start here==================================== */
+/* visitor option start here==================================== */
+
+.navbar .exhibitNav,
+.navbar .visitNav {
   position: relative;
 }
 
-.navbar .dropdownOption {
+.navbar .exhibitorDropdown,
+.navbar .visitorDropdown {
   position: absolute;
   top: 100%;
   left: -100%;
@@ -76,21 +80,33 @@ header #logo {
   border-radius: 0  0 30px 30px;
 }
 
-.navbar .dropdownOption li {
+.navbar .exhibitorDropdown li,
+.navbar .visitorDropdown li {
   padding: 8px 10px;
   text-align: center;
 
 }
 
-.navbar .dropdownOption a {
+.navbar .exhibitorDropdown a,
+.navbar .visitorDropdown a {
   font-size: 14px;
   display: inline-block;
 }
 
-.exhibitDropdown:hover .dropdownOption{
-  display: block !important;
+.exhibitNav:hover .exhibitorDropdown,
+.visitNav:hover .visitorDropdown{
+    display: block !important;
 }
-/* dropdown option==================================== */
+
+/*exhibitor dropdown end here==================================== */
+
+.navbar .visitorDropdown {
+  left: -150%;
+  width: 300px;
+
+}
+/* visitor dropdown end here==================================== */
+
 /* header end here======================= */
 
 

@@ -29,37 +29,71 @@
     padding: 80px 0;
     line-height: 1.6;
 }
-.exhibitor .exhibitorHeading{
+
+.exhibitor .exhibitorHeading {
     width: 100% !important;
 }
 
 .exhibitor .exhibitorForm {
     width: 40%;
-    padding:20px 30px;
+    padding: 20px 30px;
     margin: 20px;
     border: 1px solid #000;
 }
+
 .exhibitor .exhibitorForm h2 {
     font-size: 20px;
     padding-bottom: 10px;
 }
+
+.exhibitor .exhibitorForm div,
 .exhibitor .exhibitorForm form {
     display: grid;
+    align-items: center;
+}
+
+
+.exhibitor .exhibitorForm div::before {
+    position: absolute;
+    font-family: "fontAwesome";
+    text-indent: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.exhibitor .exhibitorForm .exhibitorName::before {
+    content: "\f007";
+}
+
+
+.exhibitor .exhibitorForm .exhibitorCompany::before {
+    content: "\f0f7";
+}
+
+.exhibitor .exhibitorForm .exhibitorEmail::before {
+    content: "\f0e0";
+}
+
+.exhibitor .exhibitorForm .exhibitorMobile::before {
+    content: "\f098";
+}
+
+.exhibitor .exhibitorForm .boothChoice::before {
+    content: "\f00a";
 }
 
 .exhibitor form input {
-    padding: 5px;
+    padding: 10px 40px;
     margin: 10px 0;
 }
 
 .exhibitor .exhibitorForm span,
-.exhibitor .exhibitorForm label,
 .exhibitor .exhibitorForm input {
     font-size: 12px;
     align-self: center;
 }
 
-#exhibitorSubmit{
+#exhibitorSubmit {
     background-color: #005c00;
     border: transparent;
     color: #fff;
@@ -67,45 +101,22 @@
     font-weight: bold;
     font-size: 18px;
 }
-#exhibitorSubmit:hover{
+
+#exhibitorSubmit:hover {
     background-color: #008000;
 }
+
 /* exhibitor here section ========================== */
 
 @media screen and (max-width: 1115px) {
-    .exhibitor .wrapper {
-        flex-direction: column;
-    }
-    .exhibitor .exhibitorHeading,
-    .exhibitor .exhibitorForm {
-        margin:10px 0;
-        padding: 10px;
-    }
+
 }
 
 @media screen and (max-width: 786px) {
-    .exhibitor h2 {
-        font-size: 25px;
-    }
 
-    .exhibitor p {
-        font-size: 15px;
-    }
 }
 
 @media screen and (max-width: 580px) {
 
 
-
-    .exhibitor h1 {
-        font-size: 20px;
-    }
-
-    .exhibitor h2 {
-        font-size: 18px;
-    }
-
-    .exhibitor p {
-        font-size: 12px;
-    }
 }

@@ -9,6 +9,11 @@
   <!-- css start here============================== -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/exhibitor.css">
+
+  <!-- font awesome cdn 4======================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css"
+    integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -37,21 +42,27 @@
           <!-- <h2>I Am Interested to Participate</h2> -->
           <h2>I am excited to get involved.</h2>
           <form>
-            <label>Name :</label>
-            <input type="text" name="exhibitorName" id="exhibitorName" placeholder="Name" required>
+            <div class="exhibitorName">
+              <input type="text" name="exhibitorName" id="exhibitorName" placeholder="Name" required>
+            </div>
 
-            <label>Company :</label>
-            <input type="text" name="exhibitorCompany" id="exhibitorCompany" placeholder="Company" required>
+            <div class="exhibitorCompany">
+              <input type="text" name="exhibitorCompany" id="exhibitorCompany" placeholder="Company" required>
+            </div>
 
-            <label>Email :</label>
-            <input type="email" name="exhibitorEmail" id="exhibitorEmail" placeholder="email" required>
+            <div class="exhibitorEmail">
+              <input type="email" name="exhibitorEmail" id="exhibitorEmail" placeholder="email" required>
+            </div>
 
-            <label>mobile:</label>
-            <input type="tel" name="exhibitorMobile" id="exhibitorMobile" placeholder="mobile" required>
+            <div class="exhibitorMobile">
+              <input type="tel" name="exhibitorMobile" id="exhibitorMobile" placeholder="mobile" required>
+            </div>
 
-            <label>Booth Choice :</label>
-            <input type="text" name="boothChoice" id="boothChoice" placeholder="Booth Choice" required>
-            <input type="button" id="exhibitorSubmit" value="Submit">
+            <div class="boothChoice">
+              <input type="text" name="boothChoice" id="boothChoice" placeholder="Booth Choice" required>
+            </div>
+
+            <button type="submit" id="exhibitorSubmit" value="Submit">Submit</button>
           </form>
         </div>
       </div>

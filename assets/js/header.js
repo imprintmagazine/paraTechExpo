@@ -16,15 +16,6 @@ mobileNavbar.addEventListener("click", toggleNavbar);
 window.onscroll = scrollFunction;
 
 // dropdown exhibit=====================================
-// const exhibitDrop = document.querySelector(".exhibitDropdown");
-// const exhibitOption = document.querySelector(".dropdownOption");
 
-// const toggleDropdown = () => {
-//   if ((exhibitOption).display === "none") {
-//     document.exhibitOption.style.display = "block";
-//   }
-// }
-
-// exhibitDrop.addEventListener("click", toggleDropdown);
 
 // dropdown exhibit=====================================

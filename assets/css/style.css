@@ -85,11 +85,11 @@ a {
 /* banner end here================= */
 
 /* participation start here==================== */
-.participation,
-.infocast {
+
+/* .infocast, */
+.participation {
   text-align: center;
   padding: 80px 0;
-  border-top: 1px solid #000;
 }
 
 .participation h3,
@@ -137,21 +137,22 @@ a {
 }
 
 
-
-/* Marquee styles */
-.participation .overview {
-  margin-top: 50px;
-  background-color: #102866;
-  padding: 30px 0;
-  color: #fff;
-  /* border-radius: 50px 0; */
+/* overview para tech expo 2025 */
+.overviewParaTech{
+  background-color: #000;
+  text-align: center;
 }
 
-.participation .overview h4 {
+/* Marquee styles */
+.overviewParaTech .overview {
+  padding: 30px 0;
+  color: #fff;
+}
+
+.overviewParaTech .overview h4 {
   font-size: 25px;
   padding-bottom: 30px;
   justify-content: center;
-
 }
 
 .marquee {
@@ -208,12 +209,7 @@ a {
 
 /* infocast section here============================= */
 .infocast {
-  padding: 80px 150px;
-}
-
-.infocast #learnMore,
-.infocast figure {
-  justify-content: center;
+  padding: 80px 0;
 }
 
 .infocast span {
@@ -243,7 +239,7 @@ a {
   letter-spacing: 1px;
   transition: 1s;
   font-size: 20px;
-  
+
 }
 
 .infocast #learnMore:hover,
@@ -387,12 +383,12 @@ a {
 
   .joinPARA .joinPARAList div {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
   }
 
-  .joinPARA .joinPARAList div h4 {
-    justify-content: center;
+  .joinPARA .joinPARAHeading h3 {
+    justify-content: left;
   }
 
   .upcomingShow .showText h4 {
@@ -429,7 +425,7 @@ a {
   .infocast h3,
   .participation h3,
   .participation p,
-  .participation .overview h4 {
+  .overviewParaTech .overview h4 {
     font-size: 20px;
   }
 
@@ -491,7 +487,7 @@ a {
   }
 
   .marquee__content li:first-child,
-  .participation .overview h4 {
+  .overviewParaTech .overview h4 {
     font-size: 15px;
   }
 
