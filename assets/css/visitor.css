@@ -1,5 +1,100 @@
-/* visitor start section ========================= */
-.visitor h1 {
+.visitorProfile,
+.visitorSector,
+.visitBenefits,
+.visitorRegistration,
+.exhibitorProfile{
+    padding: 100px 0;
+}
+
+.visitorProfile,
+.visitBenefits,
+.exhibitorProfile {
+    background-color: #000;
+    color: #fff;
+}
+
+/* visit profile start here===================== */
+
+.visitorProfile h2,
+.visitorSector h2,
+.visitBenefits h2{
+    justify-content: left !important;
+}
+
+.visitorProfile h2,
+.visitorSector h2,
+.visitBenefits h2,
+.exhibitorProfile h2 {
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.visitorProfile .visitorProfileInfo ul,
+.visitBenefits .visitBenefitsInfo,
+.exhibitorProfile .exhibitorProfileInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.visitorProfile .visitorProfileInfo div {
+    padding: 10px 0;
+    line-height: 1.4;
+    display: flex;
+}
+
+.visitorProfile .visitorProfileInfo div::before{
+    content: "\f067";
+    font-family: "fontAwesome";
+    color: #00ff00;
+    padding-right: 10px;
+}
+
+/* visit profile end here===================== */
+.visitorSector .visitorSectorInfo {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.visitorSector .visitorSectorInfo div{
+    width: 300px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.visitorSector .visitorSectorInfo span{
+    padding: 5px;
+    margin: 5px;
+    display: block;
+}
+.visitorSector .visitorSectorInfo div::before{
+    content: '\f123';
+    color: #005c00;
+    font-size: 15px;
+    font-family: 'fontAwesome';
+}
+/* visit profile end here===================== */
+
+/* visit benefits start here===================== */
+.visitBenefits .visitBenefitsInfo div {
+    padding: 5px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+}
+
+.visitBenefits .visitBenefitsInfo div::before{
+    content: "✔";
+    color: #00ff00;
+    padding-right: 10px;
+}
+/* visit benefits end here===================== */
+
+
+/* visitor Registration start section ========================= */
+.visitorRegistration h1 {
     font-size: 50px;
     animation: effect 2s linear infinite;
 }
@@ -14,43 +109,42 @@
     }
 }
 
-.visitor h2 {
+.visitorRegistration h2 {
     font-size: 40px;
 }
 
-.visitor p {
+.visitorRegistration p {
     font-size: 20px;
     padding: 5px 0;
 }
 
-.visitor .wrapper {
+.visitorRegistration .wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 80px 0;
     line-height: 1.6;
 }
 
-.visitor .visitorHeading {
+.visitorRegistration .visitorHeading {
     width: 100% !important;
 }
 
-.visitor .visitorForm {
+.visitorRegistration .visitorForm {
     width: 60%;
     padding: 20px 30px;
     margin: 20px;
     border: 1px solid #000;
 }
 
-.visitor .visitorForm h2 {
+.visitorRegistration .visitorForm h2 {
     font-size: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
-.visitor .visitorForm form {
+.visitorRegistration .visitorForm form {
     display: grid;
 }
 
-.visitor .visitorForm div {
+.visitorRegistration .visitorForm div {
     display: grid;
     align-items: center;
     position: relative;
@@ -58,21 +152,21 @@
 }
 
 
-.visitor .visitorForm div input,
-.visitor .visitorForm select {
+.visitorRegistration .visitorForm div input,
+.visitorRegistration .visitorForm select {
     padding: 10px 40px;
 }
 
-.visitor .visitorForm .mumbaiAttractions,
-.visitor .visitorForm .hotelRoom {
+.visitorRegistration .visitorForm .mumbaiAttractions,
+.visitorRegistration .visitorForm .hotelRoom {
     display: flex;
 }
-.visitor .visitorForm .mumbaiAttractions input[type="checkbox"],
-.visitor .visitorForm .hotelRoom input[type="checkbox"]{
+.visitorRegistration .visitorForm .mumbaiAttractions input[type="checkbox"],
+.visitorRegistration .visitorForm .hotelRoom input[type="checkbox"]{
     margin-right: 10px;
-
 }
-.visitor .visitorForm div::before {
+
+.visitorForm div::before {
     position: absolute;
     font-family: "fontAwesome";
     text-indent: 0;
@@ -80,37 +174,37 @@
     font-size: 20px;
 }
 
-.visitor .visitorForm .visitorName::before {
+.visitorForm .visitorName::before {
     content: "\f007";
 }
 
-.visitor .visitorForm .visitorDesignation::before {
+.visitorForm .visitorDesignation::before {
     content: "\f044";
 }
 
-.visitor .visitorForm .visitorCompany::before {
+.visitorForm .visitorCompany::before {
     content: "\f0f7";
 }
 
-.visitor .visitorForm .visitorEmail::before {
+.visitorForm .visitorEmail::before {
     content: "\f0e0";
 }
 
-.visitor .visitorForm .visitorMobile::before {
+.visitorForm .visitorMobile::before {
     content: "\f098";
 }
 
-.visitor .visitorForm .visitorIndustry::before {
+.visitorForm .visitorIndustry::before {
     content: "\f275";
 }
 
-.visitor .visitorForm .visitorJobDescription::before {
+.visitorForm .visitorJobDescription::before {
     content: "\f2c3";
 }
 
-.visitor .visitorForm span,
-.visitor .visitorForm input,
-.visitor .visitorForm option {
+.visitorRegistration .visitorForm span,
+.visitorRegistration .visitorForm input,
+.visitorRegistration .visitorForm option {
     font-size: 12px;
     align-items: center;
 }
@@ -129,77 +223,7 @@
 #visitorSubmit:hover {
     background-color: #008000;
 }
-
-
-/* visitor here section ========================== */
-
-/* why visit start here===================== */
-.visitBenefits,
-.exhibitorProfile {
-    padding: 80px 0;
-    background-color: #000;
-    color: #fff;
-}
-
-.visitBenefits h2,
-.visitorProfile h2{
-    justify-content: left !important;
-}
-
-
-.visitBenefits h2,
-.visitorProfile h2,
-.exhibitorProfile h2 {
-    justify-content: center;
-    font-size: 40px;
-    padding-bottom: 40px;
-}
-
-.visitBenefits .visitBenefitsInfo,
-.visitorProfile .visitorProfileInfo ul,
-.exhibitorProfile .exhibitorProfileInfo {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.visitBenefits .visitBenefitsInfo div {
-    padding: 5px 0;
-    font-size: 18px;
-    line-height: 1.6;
-    display: flex;
-}
-
-.visitBenefits .visitBenefitsInfo div::before{
-    content: "✔";
-    color: #00ff00;
-    padding-right: 10px;
-}
-
-/* why visit end here===================== */
-
-/* who Should Visit start here=========== */
-
-.visitorProfile {
-    padding: 80px 0;
-}
-
-.visitorProfile .visitorProfileInfo div {
-    padding: 10px 0;
-    line-height: 1.4;
-    display: flex;
-}
-
-.visitorProfile .visitorProfileInfo div::before{
-    content: "\f067";
-    font-family: "fontAwesome";
-    color: #005700;
-    padding-right: 10px;
-}
-
-/* who Should Visit end here=========== */
-
+/* visitor Registration section end here========================== */
 
 /* exhibitor Profile start here================================= */
 

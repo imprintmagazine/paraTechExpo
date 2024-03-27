@@ -12,10 +12,5 @@ const scrollFunction = () => {
   logo.style.width = scrollTop > 0 ? "100px" : "150px";
 };
 
-mobileNavbar.addEventListener("click", toggleNavbar);
+headerNavbar.addEventListener("click", toggleNavbar);
 window.onscroll = scrollFunction;
-
-// dropdown exhibit=====================================
-
-
-// dropdown exhibit=====================================
