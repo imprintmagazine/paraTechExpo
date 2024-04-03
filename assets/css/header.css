@@ -63,11 +63,13 @@ header #logo {
 /* exhibitor option start here==================================== */
 /* visitor option start here==================================== */
 
+.navbar .conferenceNav,
 .navbar .exhibitNav,
 .navbar .visitNav {
   position: relative;
 }
 
+.navbar .conferenceDropdown,
 .navbar .exhibitorDropdown,
 .navbar .visitorDropdown {
   position: absolute;
@@ -77,9 +79,10 @@ header #logo {
   background-color: #000;
   display: none;
   z-index: 1;
-  border-radius: 0  0 30px 30px;
+  border-radius: 0 0 30px 30px;
 }
 
+.navbar .conferenceDropdown li,
 .navbar .exhibitorDropdown li,
 .navbar .visitorDropdown li {
   padding: 8px 10px;
@@ -87,15 +90,17 @@ header #logo {
 
 }
 
+.navbar .conferenceDropdown a,
 .navbar .exhibitorDropdown a,
 .navbar .visitorDropdown a {
   font-size: 14px;
   display: inline-block;
 }
 
+.conferenceNav:hover .conferenceDropdown,
 .exhibitNav:hover .exhibitorDropdown,
-.visitNav:hover .visitorDropdown{
-    display: block !important;
+.visitNav:hover .visitorDropdown {
+  display: block !important;
 }
 
 /*exhibitor dropdown end here==================================== */
@@ -105,7 +110,14 @@ header #logo {
   width: 300px;
 
 }
+
 /* visitor dropdown end here==================================== */
+
+.navbar .conferenceDropdown {
+  width: 300px;
+  left: -100px;
+
+}
 
 /* header end here======================= */
 
