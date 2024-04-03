@@ -2,7 +2,7 @@
 .visitorSector,
 .visitBenefits,
 .visitorRegistration,
-.exhibitorProfile{
+.exhibitorProfile {
     padding: 100px 0;
 }
 
@@ -17,7 +17,7 @@
 
 .visitorProfile h2,
 .visitorSector h2,
-.visitBenefits h2{
+.visitBenefits h2 {
     justify-content: left !important;
 }
 
@@ -45,7 +45,7 @@
     display: flex;
 }
 
-.visitorProfile .visitorProfileInfo div::before{
+.visitorProfile .visitorProfileInfo div::before {
     content: "\f067";
     font-family: "fontAwesome";
     color: #00ff00;
@@ -58,23 +58,27 @@
     flex-wrap: wrap;
     /* justify-content: space-between; */
 }
-.visitorSector .visitorSectorInfo div{
+
+.visitorSector .visitorSectorInfo div {
     width: 300px;
     font-weight: bold;
     display: flex;
     align-items: center;
 }
-.visitorSector .visitorSectorInfo span{
+
+.visitorSector .visitorSectorInfo span {
     padding: 5px;
     margin: 5px;
     display: block;
 }
-.visitorSector .visitorSectorInfo div::before{
+
+.visitorSector .visitorSectorInfo div::before {
     content: '\f123';
     color: #005c00;
     font-size: 15px;
     font-family: 'fontAwesome';
 }
+
 /* visit profile end here===================== */
 
 /* visit benefits start here===================== */
@@ -85,11 +89,12 @@
     display: flex;
 }
 
-.visitBenefits .visitBenefitsInfo div::before{
+.visitBenefits .visitBenefitsInfo div::before {
     content: "✔";
     color: #00ff00;
     padding-right: 10px;
 }
+
 /* visit benefits end here===================== */
 
 
@@ -161,8 +166,9 @@
 .visitorRegistration .visitorForm .hotelRoom {
     display: flex;
 }
+
 .visitorRegistration .visitorForm .mumbaiAttractions input[type="checkbox"],
-.visitorRegistration .visitorForm .hotelRoom input[type="checkbox"]{
+.visitorRegistration .visitorForm .hotelRoom input[type="checkbox"] {
     margin-right: 10px;
 }
 
@@ -223,23 +229,37 @@
 #visitorSubmit:hover {
     background-color: #008000;
 }
+
 /* visitor Registration section end here========================== */
 
 /* exhibitor Profile start here================================= */
 
 .exhibitorProfile .exhibitorProfileInfo h3 {
-    padding: 40px 20px;
+    padding: 20px;
     margin: 10px;
-    background-color: #fff;
-    color: #000;
-    justify-content: center;
+    width: 280px;
+    justify-content: space-between;
 }
 
-.exhibitorProfileInfo .slick-dots li button:before,
+.exhibitorProfile .exhibitorProfileInfo div {
+    align-items: center;
+    display: flex;
+
+}
+
+.exhibitorProfile .exhibitorProfileInfo div::before {
+    content: "\f005";
+    color: green;
+    font-family: "fontAwesome";
+
+
+}
+
+/* .exhibitorProfileInfo .slick-dots li button:before,
 .exhibitorProfileInfo .slick-dots li.slick-active button:before {
     color: #fff !important;
     font-size: 15px;
     padding-top: 40px;
-}
+} */
 
 /* exhibitor Profile end here=========================== */

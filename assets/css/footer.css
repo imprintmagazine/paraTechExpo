@@ -10,6 +10,10 @@ footer {
     color: #000;
 }
 
+.upperFooter h3 {
+    justify-content: center;
+}
+
 .upperFooter .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -21,16 +25,69 @@ footer {
 }
 
 .upperFooter a {
-    color: #000;
+    color: #333;
     font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: text-decoration-color 1s;
+    justify-content: center;
+    letter-spacing: 1px;
 }
 
 .upperFooter a:hover {
-    color: #0008ff;
-    text-decoration-color: currentcolor;
+    color: #000;
+}
+
+.upperFooter .socialMediaLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.upperFooter .socialMediaLinks a {
+    text-indent: -9999px;
+}
+
+.upperFooter .socialMediaLinks a::before {
+    font-family: "fontAwesome";
+    text-indent: 0;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 50%;
+    font-weight: lighter;
+}
+
+.upperFooter .socialMediaLinks #whatsapp::before {
+    background-color: #008000;
+    content: "\f232";
+}
+
+.upperFooter .socialMediaLinks #facebook::before {
+    background-color: #1877F2;
+    padding: 0 15px;
+    content: "\f09a";
+}
+
+.upperFooter .socialMediaLinks #instagram::before {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    content: "\f16d";
+}
+
+.upperFooter .socialMediaLinks #youtube::before {
+    background-color: #ff0000;
+    content: "\f16a";
+}
+
+.upperFooter figure {
+    flex-direction: column;
+}
+
+.upperFooter figure figcaption {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .lowerFooter {
