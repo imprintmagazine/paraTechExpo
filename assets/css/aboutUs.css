@@ -29,3 +29,15 @@
     font-family: "fontAwesome";
 
 }
+
+#timelineSnap{
+    border: 1px solid #000;
+    display: inline-block;
+}
+#timelineSnap img{
+    width: 50px;
+}
+
+#shujiNakamura{
+    width: 20%;
+}
