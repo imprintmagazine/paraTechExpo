@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Tech Expo</title>
+
+  <!-- css start here============================== -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/exhibitor.css">
+
+  <!-- font awesome cdn 4======================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css"
+    integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- header start here============================== -->
+  <div id="header"></div>
+  <!-- header end here============================== -->
+
+  <!-- main start here============================== -->
+  <main>
+
+    <section class="exhibitorHalls" id="exhibitorHalls">
+      <div class="wrapper">
+        <h1>Halls</h1>
+        <h2>Hall 1 | Central Hall | Hall 2</h2>
+        <figure class="cidcoExhibitorHalls">
+          <img src="./assets/images/CIDCO_Halls.jpg" alt="CIDCO Exhibition_Centre">
+        </figure>
+        <div class="cidcoHallDefine">
+          <ul>
+            <h1>HALL 1</h1> <h2> Hardware Automation</h2>
+            <li>Industrial Automation</li>
+            <li>Industrial Robotics</li>
+            <li>Machine Learning</li>
+            <li>Sensors</li>
+            <li>Cobots</li>
+            <li>PLCs</li>
+            <li>AGV</li>
+          </ul>
+          <figure>
+            <img src="./assets/images/robot.png" alt="robot image" id="robotImage">
+          </figure>
+          <ul>
+            <h1>HALL 2</h1> <h2> Software Automation</h2>
+            <li>Digital Transformation</li>
+            <li>Artificial Intelligence</li>
+            <li>Edge Computing</li>
+            <li>Cyber Security</li>
+            <li>Digital Twins</li>
+            <li>VR & AR</li>
+            <li>IIOT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <!-- footer start here============================== -->
+  <div id="footer"></div>
+  <!-- footer end here============================== -->
+
+  <!-- javascript start here========================= -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+</body>
+
+</html>

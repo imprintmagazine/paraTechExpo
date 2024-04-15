@@ -2,16 +2,11 @@
 footer {
     border-top: 1px solid #000;
     color: #fff;
-    text-align: center;
 }
 
 .upperFooter {
     padding: 80px 0;
     color: #000;
-}
-
-.upperFooter h3 {
-    justify-content: center;
 }
 
 .upperFooter .wrapper {
@@ -27,7 +22,6 @@ footer {
 .upperFooter a {
     color: #333;
     font-weight: bold;
-    justify-content: center;
     letter-spacing: 1px;
 }
 
@@ -93,6 +87,7 @@ footer {
 .lowerFooter {
     background-color: #000;
     padding: 10px 0;
+    text-align: center;
 }
 
 /* footer end here======================= */
