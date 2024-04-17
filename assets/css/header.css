@@ -1,3 +1,7 @@
+.exhibitorDropdown.show {
+  display: block !important;
+}
+
 /* |header start here?=================== */
 #header {
   z-index: 1;
@@ -28,6 +32,7 @@ header .navbar a {
   padding: 5px;
   border-bottom: 2px solid transparent;
   text-align: center;
+  cursor: pointer;
 }
 
 header .navbar a:hover {
@@ -76,7 +81,7 @@ header #logo {
   top: 100%;
   left: -100%;
   width: 170px;
-  background-color: #000;
+  background-color: #1a1e52;
   display: none;
   z-index: 1;
   border-radius: 0 0 30px 30px;

@@ -26,14 +26,11 @@
     padding-right: 20px;
 }
 
+.team figure img,
 .team figcaption {
     padding: 10px;
     font-weight: bold;
-}
-
-
-.team figure img {
-    width: 200px;
+    width: 250px;
 }
 
 .ourTeam h3 {
@@ -45,6 +42,43 @@
     padding: 5px 0;
 }
 
-#timelineSnap{
+#timelineSnap {
     display: inline-block;
+}
+
+@media screen and (max-width: 995px) {
+    .ourTeam P {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .ourTeam P {
+        font-size: 12px;
+    }
+
+    .team .managingDirector,
+    .team .director,
+    .team .businessDevelopmentManager,
+    .team .accountant,
+    .team .webDeveloper {
+
+        flex-direction: column;
+    }
+
+    .team figure img,
+    .team figcaption {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .ourTeam h3 {
+        font-size: 20px;
+    }
+
+    .team figure img,
+    .team figcaption {
+        width: 100%;
+    }
 }

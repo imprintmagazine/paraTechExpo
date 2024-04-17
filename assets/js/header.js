@@ -14,3 +14,22 @@ const scrollFunction = () => {
 
 headerNavbar.addEventListener("click", toggleNavbar);
 window.onscroll = scrollFunction;
+
+
+// header.js
+
+// Function to toggle the exhibitor dropdown
+function toggleExhibitDropdown() {
+  var dropdown = document.getElementById("exhibitorDropdown");
+  dropdown.classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.exhibitBtn')) {
+    var dropdown = document.getElementById("exhibitorDropdown");
+    if (dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    }
+  }
+};
