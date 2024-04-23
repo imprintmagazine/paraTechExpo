@@ -1,3 +1,56 @@
-.infocastLearnMore{
+.infocastDetails{
     padding: 80px 0;
+    line-height: 1.6;
+}
+
+.infocastDetails .wrapper{
+    display: flex;
+}
+
+.doubleSpreadAd,
+.coverImage{
+    padding: 10px 0;
+    width: 90%;
+}
+.doubleSpreadAd img,
+.coverImage img{
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.infocastLearnMore h2{
+    font-size: 60px;
+}
+
+.infocastLearnMore p{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1115px){
+    .infocastLearnMore h2{
+        font-size: 50px;
+    }
+    .infocastLearnMore p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .infocastLearnMore h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .infocastDetails .wrapper{
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .infocastLearnMore h2{
+        font-size: 30px;
+    }
 }

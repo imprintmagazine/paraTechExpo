@@ -12,30 +12,34 @@ footer {
 .upperFooter .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .upperFooter ul {
     line-height: 2;
+    padding: 10px;
 }
 
 .upperFooter a {
     color: #333;
     font-weight: bold;
     letter-spacing: 1px;
+    display: inline-block;
 }
 
 .upperFooter a:hover {
-    color: #000;
+    color: #002aff;
 }
 
 .upperFooter .socialMediaLinks {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .upperFooter .socialMediaLinks a {
     text-indent: -9999px;
+    display: flex !important;
+    flex-basis: 10%;
 }
 
 .upperFooter .socialMediaLinks a::before {
@@ -79,19 +83,28 @@ footer {
 
 .upperFooter figure figcaption {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 13px;
     font-weight: bold;
 }
 
 .lowerFooter {
     background-color: #000;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
-/* footer end here======================= */
+.upperFooter b{
+    font-weight: bolder;
+    color: #000;
+}
 
+/* footer end here======================= */
+@media screen and (max-width: 785px){
+    .upperFooter a {
+        font-size: 15px;
+    }
+}
 
 @media screen and (max-width: 580px) {
     .upperFooter .wrapper {

@@ -35,7 +35,7 @@ a {
 
 /* banner start here================= */
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url("../images/banner.png");
+  background: linear-gradient(#000000d0,#00000099),url("../images/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

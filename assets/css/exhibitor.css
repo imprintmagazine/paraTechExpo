@@ -206,8 +206,30 @@
     .cidcoHallDefine h3 {
         font-size: 30px;
     }
+
+    .exhibitor .wrapper {
+        flex-direction: column;
+    }
 }
 
-@media screen and (max-width: 786px) {}
+@media screen and (max-width: 900px) {
+    .exhibitor .exhibitorForm {
+        width: 100% !important;
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .exhibitor h1 {
+        font-size: 35px;
+    }
+    .exhibitor h2 {
+        font-size: 25px;
+    }
+    .exhibitor p {
+        font-size: 15px;
+    }
+}
 
 @media screen and (max-width: 580px) {}

@@ -255,11 +255,40 @@
 
 }
 
-/* .exhibitorProfileInfo .slick-dots li button:before,
-.exhibitorProfileInfo .slick-dots li.slick-active button:before {
-    color: #fff !important;
-    font-size: 15px;
-    padding-top: 40px;
-} */
 
-/* exhibitor Profile end here=========================== */
+@media screen and (max-width: 1115px) {
+
+    .visitorRegistration .wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .visitorRegistration .visitorForm {
+
+        width: 100% !important;
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .visitorRegistration h1 {
+        font-size: 35px;
+    }
+
+    .visitorForm h2 {
+        font-size: 20px !important;
+    }
+
+    .visitorRegistration p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .visitorRegistration .visitorForm select {
+        width: 100%;
+    }
+}

@@ -35,8 +35,12 @@ header .navbar a {
   cursor: pointer;
 }
 
-header .navbar a:hover {
+header .navbar a:hover:not(.active) {
   border-bottom: 2px solid #fff;
+}
+
+.navbarList li a.active {
+  border-bottom: 2px solid #ff0000 !important;
 }
 
 header #logo {
