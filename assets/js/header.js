@@ -1,35 +1,20 @@
 const mobileNavbar = document.querySelector(".mobileBtn");
-const headerNavbar = document.querySelector("#header");
-const logo = document.querySelector("#logo");
+const headerNavbar = document.querySelector("header"); // Changed the selector to target the header element
+const logos = document.querySelectorAll(".logo"); // Changed the variable name to logos and corrected the selector
 
 const toggleNavbar = () => {
   headerNavbar.classList.toggle("active");
-  logo.style.width = headerNavbar.classList.contains("active") ? "100px" : "150px";
+  logos.forEach((logo) => { // Iterating over NodeList to apply style to each logo
+    logo.style.width = headerNavbar.classList.contains("active") ? "100px" : "150px";
+  });
 };
 
 const scrollFunction = () => {
   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-  logo.style.width = scrollTop > 0 ? "100px" : "150px";
+  logos.forEach((logo) => { // Iterating over NodeList to apply style to each logo
+    logo.style.width = scrollTop > 0 ? "50px" : "150px";
+  });
 };
 
-headerNavbar.addEventListener("click", toggleNavbar);
+mobileNavbar.addEventListener("click", toggleNavbar); // Changed to mobileNavbar
 window.onscroll = scrollFunction;
-
-
-// header.js
-
-// Function to toggle the exhibitor dropdown
-function toggleExhibitDropdown() {
-  var dropdown = document.getElementById("exhibitorDropdown");
-  dropdown.classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.exhibitBtn')) {
-    var dropdown = document.getElementById("exhibitorDropdown");
-    if (dropdown.classList.contains('show')) {
-      dropdown.classList.remove('show');
-    }
-  }
-};
