@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Tech Expo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/hotel.css">
+
+  <!-- font awesome cdn 4======================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css"
+    integrity="sha512-FEQLazq9ecqLN5T6wWq26hCZf7kPqUbFC9vsHNbXMJtSZZWAcbJspT+/NEAQkBfFReZ8r9QlA9JHaAuo28MTJA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- chat with us section end here==================================================================== -->
+  <div id="header"></div>
+
+  <!-- main start here-->
+  <main>
+  <section class="hotel">
+    <div class="wrapper">
+      <form class="hotelForm" action="https://formsubmit.co/paratechexpo@gmail.com" method="POST">
+        <h2>
+            Hotel Booking
+          </h2>
+
+        <div class="name">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+
+        <div class="company">
+          <input type="text" name="company" id="company" placeholder="Company" required>
+        </div>
+
+        <div class="email">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="mobile">
+          <input type="tel" name="mobile" id="mobile" placeholder="Mobile" required>
+        </div>
+
+        <div class="specifyQueries">
+          <input type="text" name="specify queries" id="specifyQueries" placeholder="Specify Queries....." required>
+        </div>
+
+        <button type="submit" id="submit">submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- chat with us section end here==================================================================== -->
+
+</main>
+<!-- main end here-->
+
+<div id="footer"></div>
+
+<!-- <script src="./assets/js/script.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+</body>
+
+</html>

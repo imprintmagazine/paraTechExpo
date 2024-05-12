@@ -1,0 +1,114 @@
+/* connect with us section start here========================================= */
+.hotel {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.hotel .wrapper {
+    display: flex;
+}
+
+.hotel .hotelForm {
+    width: 40%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+}
+
+.hotel .hotelForm div {
+    display: grid;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.hotel .hotelForm h3 {
+    font-size: 30px;
+    align-items: center;
+    line-height: 0;
+}
+
+.hotel .hotelForm div input {
+    padding: 10px 40px;
+}
+
+.hotel .hotelForm div::before {
+    position: absolute;
+    font-family: "fontAwesome";
+    text-indent: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.hotel .hotelForm .name::before {
+    content: "\f007";
+}
+
+.hotel .hotelForm .company::before {
+    content: "\f0f7";
+}
+
+.hotel .hotelForm .email::before {
+    content: "\f0e0";
+}
+
+.hotel .hotelForm .mobile::before {
+    content: "\f098";
+}
+
+.hotel .hotelForm .specifyQueries::before {
+    content: "\f059";
+}
+
+.hotelForm span,
+.hotel .hotelForm div {
+    font-size: 12px;
+    align-self: center;
+}
+
+#submit {
+    background-color: #005c00;
+    border: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+#submit:hover {
+    background-color: #008000;
+}
+
+/* connect with us section end here========================================= */
+@media screen and (max-width: 1115px) {
+    .hotel .hotelForm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .hotel .wrapper {
+        flex-direction: column;
+    }
+
+    .hotel .hotelForm {
+        width: 100%;
+        margin:10px 0;
+    }
+    .hotel .hotelForm div input {
+        margin: 10px 0;
+    }
+
+    #submit {
+        padding: 10px 0;
+    }
+}
+
+/* @media screen and (max-width: 786px) {
+} */
+
+/* @media screen and (max-width: 580px) {
+} */

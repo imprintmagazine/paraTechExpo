@@ -1,0 +1,114 @@
+/* connect with us section start here========================================= */
+.carBooking {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.carBooking .wrapper {
+    display: flex;
+}
+
+.carBooking .carBookingForm {
+    width: 40%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+}
+
+.carBooking .carBookingForm div {
+    display: grid;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.carBooking .carBookingForm h3 {
+    font-size: 30px;
+    align-items: center;
+    line-height: 0;
+}
+
+.carBooking .carBookingForm div input {
+    padding: 10px 40px;
+}
+
+.carBooking .carBookingForm div::before {
+    position: absolute;
+    font-family: "fontAwesome";
+    text-indent: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.carBooking .carBookingForm .name::before {
+    content: "\f007";
+}
+
+.carBooking .carBookingForm .company::before {
+    content: "\f0f7";
+}
+
+.carBooking .carBookingForm .email::before {
+    content: "\f0e0";
+}
+
+.carBooking .carBookingForm .mobile::before {
+    content: "\f098";
+}
+
+.carBooking .carBookingForm .specifyQueries::before {
+    content: "\f059";
+}
+
+.carBookingForm span,
+.carBooking .carBookingForm div {
+    font-size: 12px;
+    align-self: center;
+}
+
+#submit {
+    background-color: #005c00;
+    border: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+#submit:hover {
+    background-color: #008000;
+}
+
+/* connect with us section end here========================================= */
+@media screen and (max-width: 1115px) {
+    .carBooking .carBookingForm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .carBooking .wrapper {
+        flex-direction: column;
+    }
+
+    .carBooking .carBookingForm {
+        width: 100%;
+        margin:10px 0;
+    }
+    .carBooking .carBookingForm div input {
+        margin: 10px 0;
+    }
+
+    #submit {
+        padding: 10px 0;
+    }
+}
+
+/* @media screen and (max-width: 786px) {
+} */
+
+/* @media screen and (max-width: 580px) {
+} */

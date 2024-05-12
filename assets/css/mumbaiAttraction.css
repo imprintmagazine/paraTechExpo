@@ -1,0 +1,118 @@
+/* connect with us section start here========================================= */
+.mumbaiAttraction {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.mumbaiAttraction .wrapper {
+    display: flex;
+}
+.mumbaiAttraction .mumbaiAttractionText p {
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+.mumbaiAttraction .mumbaiAttractionForm {
+    width: 60%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+}
+
+.mumbaiAttraction .mumbaiAttractionForm div {
+    display: grid;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.mumbaiAttraction .mumbaiAttractionForm h3 {
+    font-size: 30px;
+    align-items: center;
+    line-height: 0;
+}
+
+.mumbaiAttraction .mumbaiAttractionForm div input {
+    padding: 10px 40px;
+}
+
+.mumbaiAttraction .mumbaiAttractionForm div::before {
+    position: absolute;
+    font-family: "fontAwesome";
+    text-indent: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.mumbaiAttraction .mumbaiAttractionForm .name::before {
+    content: "\f007";
+}
+
+.mumbaiAttraction .mumbaiAttractionForm .company::before {
+    content: "\f0f7";
+}
+
+.mumbaiAttraction .mumbaiAttractionForm .email::before {
+    content: "\f0e0";
+}
+
+.mumbaiAttraction .mumbaiAttractionForm .mobile::before {
+    content: "\f098";
+}
+
+.mumbaiAttraction .mumbaiAttractionForm .specifyQueries::before {
+    content: "\f059";
+}
+
+.mumbaiAttractionForm span,
+.mumbaiAttraction .mumbaiAttractionForm div {
+    font-size: 12px;
+    align-self: center;
+}
+
+#submit {
+    background-color: #005c00;
+    border: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+#submit:hover {
+    background-color: #008000;
+}
+
+/* connect with us section end here========================================= */
+@media screen and (max-width: 1115px) {
+    .mumbaiAttraction .mumbaiAttractionForm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .mumbaiAttraction .wrapper {
+        flex-direction: column;
+    }
+
+    .mumbaiAttraction .mumbaiAttractionForm {
+        width: 100%;
+        margin:10px 0;
+    }
+    .mumbaiAttraction .mumbaiAttractionForm div input {
+        margin: 10px 0;
+    }
+
+    #submit {
+        padding: 10px 0;
+    }
+}
+
+/* @media screen and (max-width: 786px) {
+} */
+
+/* @media screen and (max-width: 580px) {
+} */

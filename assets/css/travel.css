@@ -1,0 +1,114 @@
+/* connect with us section start here========================================= */
+.travel {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.travel .wrapper {
+    display: flex;
+}
+
+.travel .travelForm {
+    width: 40%;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    display: grid;
+}
+
+.travel .travelForm div {
+    display: grid;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.travel .travelForm h3 {
+    font-size: 30px;
+    align-items: center;
+    line-height: 0;
+}
+
+.travel .travelForm div input {
+    padding: 10px 40px;
+}
+
+.travel .travelForm div::before {
+    position: absolute;
+    font-family: "fontAwesome";
+    text-indent: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.travel .travelForm .name::before {
+    content: "\f007";
+}
+
+.travel .travelForm .company::before {
+    content: "\f0f7";
+}
+
+.travel .travelForm .email::before {
+    content: "\f0e0";
+}
+
+.travel .travelForm .mobile::before {
+    content: "\f098";
+}
+
+.travel .travelForm .specifyQueries::before {
+    content: "\f059";
+}
+
+.travelForm span,
+.travel .travelForm div {
+    font-size: 12px;
+    align-self: center;
+}
+
+#submit {
+    background-color: #005c00;
+    border: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+#submit:hover {
+    background-color: #008000;
+}
+
+/* connect with us section end here========================================= */
+@media screen and (max-width: 1115px) {
+    .travel .travelForm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .travel .wrapper {
+        flex-direction: column;
+    }
+
+    .travel .travelForm {
+        width: 100%;
+        margin:10px 0;
+    }
+    .travel .travelForm div input {
+        margin: 10px 0;
+    }
+
+    #submit {
+        padding: 10px 0;
+    }
+}
+
+/* @media screen and (max-width: 786px) {
+} */
+
+/* @media screen and (max-width: 580px) {
+} */
