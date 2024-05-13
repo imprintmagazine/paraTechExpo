@@ -45,11 +45,21 @@ h2{
 .exhibitorHalls,
 .featureAndHighlights,
 .infocastDetails,
-.para-webinar  {
-    padding: 80px 0;
+.para-webinar,
+.ourTeam  {
     line-height: 1.6;
+    padding-bottom: 50px;
 }
 
+.interlink{
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.interlink a:hover{
+  text-decoration:underline;
+}
 /* banner start here================= */
 .banner {
   background: linear-gradient(#000000d0,#00000099),url("../images/banner.png");
