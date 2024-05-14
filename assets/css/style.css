@@ -46,7 +46,13 @@ h2{
 .featureAndHighlights,
 .infocastDetails,
 .para-webinar,
-.ourTeam  {
+.ourTeam,
+.visitorProfile,
+.visitorSector,
+.visitBenefits,
+.visitorRegistration,
+.exhibitorProfile,
+.para-expo  {
     line-height: 1.6;
     padding-bottom: 50px;
 }
@@ -253,10 +259,12 @@ h2{
 
 .infocast h3 {
   padding: 20px 0;
+  line-height: 1.6;
 }
 
+
 .infocast p {
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .infocast #learnMore,

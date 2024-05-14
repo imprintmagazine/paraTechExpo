@@ -95,7 +95,7 @@ header h1 a{
 .navbar .visitorDropdown {
   position: absolute;
   top: 100%;
-  left: -100%;
+  transform: translateX(-50%,50%);
   width: 170px;
   background-color: #1a1e52;
   display: none;

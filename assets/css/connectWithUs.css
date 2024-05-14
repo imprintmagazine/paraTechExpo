@@ -5,6 +5,10 @@
     line-height: 1.6;
 }
 
+.connectWithUs .connectWithUsText h2 {
+    justify-content: left;
+}
+
 .connectWithUs .connectWithUsText h3 {
     font-size: 40px;
 }

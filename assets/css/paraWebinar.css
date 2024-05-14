@@ -1,0 +1,8 @@
+.para-webinar figure img{
+    width: 200px;
+}
+
+.para-webinar figure{
+    justify-content: space-between;
+    align-items:center ;
+}

@@ -1,0 +1,32 @@
+.para-expo h1 {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.para-expo .boothBooking h2,
+.para-expo .visitorBooking h2 {
+    justify-content: left;
+    font-size: 30px;
+    color: #00266d;
+}
+
+.boothBooking {
+    padding: 20px 0;
+}
+
+button {
+    border: none;
+}
+
+button a {
+    font-size: 20px;
+    color: #fff;
+    background-color: #00266d;
+    padding: 20px;
+    margin: 20px 0;
+    transition: 2s;
+}
+
+button a:hover {
+    background-color: #008000;
+}

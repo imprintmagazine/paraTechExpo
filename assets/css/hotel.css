@@ -1,8 +1,8 @@
 /* connect with us section start here========================================= */
-.hotel {
+/* .hotel {
     background-color: #000;
     color: #fff;
-}
+} */
 
 
 .hotel .wrapper {
@@ -15,6 +15,7 @@
     margin: 20px;
     border: 1px solid #fff;
     background-color: #fff;
+    border: 1px solid #000;
     color: #000;
     display: grid;
 }
