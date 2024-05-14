@@ -3,14 +3,23 @@
     border-bottom: 1px solid #000;
 }
 
+.aboutFeaturesHighlights li {
+    list-style-type: number !important;
+    padding: 10px;
+    margin: 0 10px;
+}
+
 .para-expo .boothBooking h2,
-.para-expo .visitorBooking h2 {
+.para-expo .visitorBooking h2,
+.para-expo .aboutFeaturesHighlights h2 {
     justify-content: left;
     font-size: 30px;
     color: #00266d;
 }
 
-.boothBooking {
+.boothBooking,
+.visitorBooking,
+.aboutFeaturesHighlights {
     padding: 20px 0;
 }
 
