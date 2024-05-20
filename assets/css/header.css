@@ -49,6 +49,7 @@ header .navbar a:hover:not(.active) {
 
 header h1 img {
   z-index: 1;
+  width: 200px;
 }
 
 header h1 a{
